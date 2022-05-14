@@ -1,4 +1,4 @@
-![](https://raw.githubusercontent.com/GabrielCourses/main/web_development/image/header.png)
+![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/image/header.png)
 
-# Matemáticas Discretas
+# Web Development
 
