@@ -10,10 +10,10 @@ Al trabajar en orden a través de los artículos que se enumeran a continuación
 
 En este curso ocuparemos:
 
-- Vim, Neovim, Notepad++, <p><em><a href="https://brackets.io">Brackets</a></em></p> como editor de texto.
+- Vim, Neovim, Notepad++, [Brackets](https://brackets.io/) como editor de texto.
 - Firefox, Chrome, como navegador web.
-- <p><em> Editor de gráficos o imágenes <a href="https://www.gimp.org/">GIMP</a></em></p>
-- **Un sitema de control de versiones,** para administrar archivos en servidores, colaborar en un proyecto con un equipo, compartir código y recursos, y evitar conflictos de edición. Hoy en día <p><em><a href="https://git-scm.com/">Git</a></em></p> es el sitema de control de versiones más popular y el servicio de alojamiento de codigo <p><em><a href="https://github.com/">GitHub</a></em></p>, basado en Git, también es muy popular.
+- Editor de gráficos o imágenes [GIMP](https://www.gimp.org/)
+- **Un sitema de control de versiones,** para administrar archivos en servidores, colaborar en un proyecto con un equipo, compartir código y recursos, y evitar conflictos de edición. Hoy en día [Git](https://git-scm.com/) es el sitema de control de versiones más popular y el servicio de alojamiento de codigo <p><em>https://github.com/)</a></em></p>, basado en Git, también es muy popular.
 - **Un programa de FTP,** para cargar páginas web en un servidor para el público (Git está reemplazando cada vez más a FTP para este fin). Algunos de estos programas disponibles son: Cyberduck, Fetch, y FileZilla.
 - **Un sistema de automatización,** como Grunt o Gulp para realizar tareas repetitivas de forma automática, por ejemplo minimización de código, y ejecución de prueba.
 - Bibliotecas, marcos de desarrollo (frameworks), etc., para acelerar la estructura de funciones comunes. Una biblioteca tiende a ser un archivo JavaScript o CSS existente que proporciona una funcionalidad lista para usar y pruebes tu código. Un framework tiende a llevar esta idea más allá, ofreciendo un sistema completo con alguna sintaxis personalizada para que puedas escribir una aplicación web basada en él.
