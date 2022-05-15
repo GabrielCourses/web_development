@@ -8,6 +8,10 @@ Es mucho trabajo crear un sitio web profesional, así que si eres nuevo en el de
 
 Al trabajar en orden a través de los artículos que se enumeran a continuación, pasarás de la nada a tu primera página web en línea. ¡Comencemos nuestro viaje!.
 
+### Instalación de software básico
+
+Cuando se trata de herramientas para crear un sitio web, hay mucho para elegir. Si recién estás comenzando, es posible que te sientas confundido por la variedad de editores de código, marcos de desarrollo y herramientas de prueba que existen. 
+
 En este curso ocuparemos:
 
 - Vim, Neovim, Notepad++, [Brackets](https://brackets.io/) como editor de texto.
@@ -22,10 +26,46 @@ En este curso ocuparemos:
 Nota: La lista parece ser compleja, pero de momento no es necesario un conocimiento previo de ninguna de estas herramientas. Incluso puedes iniciar con tan solo el editor de texto y alguna configuración en tu navegador web.
 ***
 
+## ¿Cómo se configura un servidor de prueba local?
 
-### Instalación de software básico
+Ahora explicaremos cómo configurar un servidor de prueba local simple en su equipo y los conceptos básicos de cómo utilizarlo.
 
-Cuando se trata de herramientas para crear un sitio web, hay mucho para elegir. Si recién estás comenzando, es posible que te sientas confundido por la variedad de editores de código, marcos de desarrollo y herramientas de prueba que existen. 
+### Prerrequisitos:
+
+**¿Cómo funciona internet?**
+
+![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/image/internet.png)
+
+Internet es la columna vertebral de la Web, la infraestructura técnica que hace posible la Web. En su forma más básica, Internet es una gran red de computadoras que se comunican entre sí.
+
+**Una red sencilla**
+
+Cuando dos computadoras necesitan comunicarse, debe vincularlas, ya sea físicamente(generalmente con un cable Ethernet) o de forma inalámbrica (por ejemplo, con sistemas Wi-Fi o Bluetooth). Todas las computadoras modernas pueden sostener cualquiera de esas conexiones.
+
+***
+Nota: Para el resto del documento, hablaremos de conexiones indistintamente si son físicas o inalámbricas.
+***
+
+![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/image/simple.png)
+
+Tal red no está limitada a dos computadoras. Puede conectar tantos ordenadores como desee. Pero se complica rápidamente conectándolas con cables y enchufes para cada computadora.
+
+![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/image/multiple.png)
+
+Para resolver este problema, cada computadora es una red está conectada a una computadora pequeña especial llamada _router_. Este _router_ solo tiene un trabajo: como un señalizador en una estación de tren, se asegura de que un mensaje enviado desde una computadora determinada llegue a la computadora de destino correcta. Para enviar un mensaje a la computadora **B**, la computadora **A** debe enviar el mensaje al _router,_ que a su vez reenvía el mensaje a la computadora **B** y se asegura de que el mensaje no se entregue a la computadora **C.**
+
+Una vez que agregamos un _router_ al sistema, nuestra red de 'n' computadoras solo requiere 'n' cables: un solo enchufe para cada computadora y un _router_ con 'n' enchufes.
+
+![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/image/router.png)
+
+**La red de redes**
+
+Pero, ¿qué pasa con la conexión de cientos, miles, miles de millones de computadoras? Por supuesto, un solo enrutador no puede escalar tanto, pero como ya comentamos, un _router_ es solo una computadora como cualquier otra, entonces, ¿que nos impide conectar dos _routers_ juntos?. Nada, así que hagamoslo.
+
+![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/image/two_routers.png)
+
+
+
 
 # Web Development
 
