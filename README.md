@@ -64,17 +64,31 @@ Pero, ¿qué pasa con la conexión de cientos, miles, miles de millones de compu
 
 ![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/image/two_routers.png)
 
+Al conectar computadoras a enrutadores, luego enrutadores a enrutadores, podemos escalar infinitamente.
+
+![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/image/routers00.png)
+
+Esta red se acerca mucho a lo que llamamos Internet, pero nos falta algo. Construimos esa red para nuestros propios fines. Hay otras redes por ahí: tus amigos, tus vecinos, cualquiera puede tener su propia red de computadoras. Pero en realidad no es posible instalar cables entre tu casa y el resto del mundo, entonces, ¿cómo puedes manejar esto? Bueno, ya hay cables ligados a tu casa, por ejemplo, energía eléctrica y teléfono. La infraestructura telefónica ya conecta tu casa con cualquier persona en el mundo por lo que es el cable perfecto que necesitamos. Para conectar nuestra red a la infraestructura telefónica, necesitamos un equipo especial llamado módem. Este módem convierte la información de nuestra red en información manejable por la infraestructura telefónica y viceversa.
+
+![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/image/modem.png)
+
+Entonces estamos conectados a la infraestructura telefónica. El siguiente paso es enviar los mensajes de nuestra red a la red a la que queremos llegar. Para ello, conectaremos nuestra red a un Internet Services Provider (ISP). Un ISP es una empresa que administra algunos enrutadores especiales que están todos vinculados entre sí y también pueden acceder a los enrutadores de otros ISP. Entonces, el mensaje de nuestra red se lleva a través de la red de redes ISP a la red de destino. Internet consiste en toda esta infraestructura de redes.
+
+![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/image/isp.png)
+
+## Finding computers
+
+Si deseas enviar un mensaje a una computadora, debes especificar cuál. Por lo tanto, cualquier computadora conectada a una red tiene una dirección única que la identifica, llamada "dirección IP" (Internet Protocol). Es una dirección formada por una serie de cuatro números separados por un punto, por ejemplo: 192.168.2.10.
+
+Para el pensamiento humano es difícil recordar estas direcciones. Para facilitar las cosas, usamos un alias como IP con un nombre legible por humanos llamado _dominio_. Por ejemplo google.com es el nombre del dominio que se utiliza sobre la dirección IP 142.250.190.78. Por lo tanto, usar el nombre de dominio es la forma más fácil de llegar a una computadora a través de Internet.
+
+## Internet and the web
+
+Como puedes notar, cuando navegamos por la web con un navegador web, generalmente usamos el nombre de dominio para llegar a un sitio web. ¿Significa eso que Internet y la Web son lo mismo? No es tan simple. Como vimos, Internet es una infraestructura técnica que permite conectar miles de millones de computadoras entre sí. Entre esas computadoras, algunas computadoras (llamadas servidores web) pueden enviar mensajes inteligibles para los navegadores web. Internet es una infraestructura, mientras que la Web es un servicio construido sobre la infraestructura. Vale la pena señalar que hay varios otros servicios integrados en Internet, como el correo electrónico y el IRC.
 
 
 
-# Web Development
 
-**HTML: HyperText Markup Language**
 
-HTML(HyperText Markup Language) is the most vasic building block of the Web. I defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearence/presentation(CSS) or functionality/behavior(Javascript).
-
-"Hypertext" refers to links that connect web pages to one another, either within a single website or between websites. Link are a fundamental aspect of the Web. By uploading content to the Internet and linking it to pages created by other people, you become an active participant in the World Wide Web.
-
-# Conceptos básicos de HTML
 
 
