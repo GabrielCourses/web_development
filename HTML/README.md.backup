@@ -52,7 +52,7 @@ Si queremos que todo el contenido de nuestra página sea de un solo color, digam
 Para enlazar nuestros 2 archivos ejercicio1.html y estilo.css agregamos dentro de \<head\> 
 
 ```
-<link rel="stylesheet" type"text/css" href="estilo.css">
+<link rel="stylesheet" type=	"text/css" href="estilo.css">
 ```
 
 Si insertamos la anterior linea de código y recargamos nuestra página, notaras que todos los títulos cambiaron a azul.
@@ -81,7 +81,7 @@ h3 {
 
 ![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/HTML/image/colors.png)
 
-Recapitulando HTML nos ayuda a darle estructura a la página, en otras palabras serían las cajas como, texto, video, imagenes. Y con CSS podemos darle un estilo propio, es decir, la apariencia
+Recapitulando HTML nos ayuda a darle estructura a la página, en otras palabras serían las cajas como, texto, imagenes, videos, links. Con CSS podemos darle un estilo propio, es decir, la apariencia. Finalmente con JavaScript vamos a darle la funcionalidad, es decir, crear un método para un botón, crear un formulario, etc.
 
 
 # CSS
