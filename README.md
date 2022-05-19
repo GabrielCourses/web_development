@@ -86,6 +86,12 @@ Para el pensamiento humano es difícil recordar estas direcciones. Para facilita
 
 Como puedes notar, cuando navegamos por la web con un navegador web, generalmente usamos el nombre de dominio para llegar a un sitio web. ¿Significa eso que Internet y la Web son lo mismo? No es tan simple. Como vimos, Internet es una infraestructura técnica que permite conectar miles de millones de computadoras entre sí. Entre esas computadoras, algunas computadoras (llamadas servidores web) pueden enviar mensajes inteligibles para los navegadores web. Internet es una infraestructura, mientras que la Web es un servicio construido sobre la infraestructura. Vale la pena señalar que hay varios otros servicios integrados en Internet, como el correo electrónico y el IRC.
 
+# Bibliografía
+
+- https://www.w3schools.com/
+- https://devdocs.io/
+
+
 
 
 

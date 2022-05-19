@@ -23,9 +23,65 @@ Las etiquetas HTML son fragmentos de código que permiten crear elementos HTML, 
 
 Si notas el etiquetado anterior, verás que \<head\> está dentro de la etiqueta \<html\>
 
-**\<title\>\</title\>**
+### La etiqueta \<title\>
+
+Para editar el titulo de nuestra página ocupamos la etiqueta \<title\> como se nota en la siguiente imagen:
 
 ![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/HTML/image/title.png)
+
+Es decir, el título de la página, estará dentro de la etiqueta de apertura \<title\> y la etiqueta de cierre \</title\>.
+
+Ahora, si queremos usar caracteres especiales, en particular el acento usado en el español, agregamos la etiqueta \<meta\> junto con el atributo charset. 
+
+### La etiqueta \<body\>
+
+Dentro de la etiqueta \<body\> se sitúa el contenido de la página web.
+
+Dentro de la etiqueta \<h1\> de apertura y \<h1\> de cierre, estará el título del contenido. De la misma manera puedo ir poniendo subtitulos con \<h2\>, \<h3\>, ..., \<h6\>.
+
+Vamos a darle color a nuestra página, lo haremos creando un archivo con extensión .css 
+
+Si queremos que todo el contenido de nuestra página sea de un solo color, digamos azul
+
+```
+* {
+	color: blue
+}
+```
+
+Para enlazar nuestros 2 archivos ejercicio1.html y estilo.css agregamos dentro de \<head\> 
+
+```
+<link rel="stylesheet" type"text/css" href="estilo.css">
+```
+
+Si insertamos la anterior linea de código y recargamos nuestra página, notaras que todos los títulos cambiaron a azul.
+
+![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/HTML/image/blue.png)
+
+Ahora, si solo quiero quiero que el primer título de nuestra página sea azul, y los demás me aparezcan con el color que viene por defecto, el negro, entonces, cambio el asterisco del archivo estilo.css por h1
+
+![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/HTML/image/h1.png)
+
+Y si queremos pintar a h2 de rojo y a h3 de naranja, editamos nuestro archivo estilo.css
+
+```
+h1 {
+	color: blue
+}
+
+h2 {
+	color: red
+}
+
+h3 {
+	color: orange
+}
+``` 
+
+![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/HTML/image/colors.png)
+
+Recapitulando HTML nos ayuda a darle estructura a la página, en otras palabras serían las cajas como, texto, video, imagenes. Y con CSS podemos darle un estilo propio, es decir, la apariencia
 
 
 # CSS
