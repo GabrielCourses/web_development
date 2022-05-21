@@ -4,7 +4,7 @@
 
 HTML, por sus siglas en inglés, significa Hypertext Markup Language. Es decir, un lenguaje de marcada, para elaborar páginas webs.
 
-Para comenzar a explorar esta herramienta (aclarar que no es un lenguaje) vamos iniciar creando un fichero en un editor de texto plano llamado ejercicio1.html En mi caso, estoy usando Vim pero usted puede usar otro como NotePad++, SublimeText, u otros. Los archivos los puedes consultar en la carpeta [CursoWeb](https://github.com/GabrielCourses/web_development/tree/main/HTML/CursoWeb)
+Para comenzar a explorar esta herramienta (aclarar que no es un lenguaje) vamos iniciar creando un fichero en un editor de texto plano llamado ejercicio1.html En mi caso, estoy usando Vim pero usted puede usar otro como NotePad++, SublimeText, u otros. Los archivos los puedes consultar en la carpeta [ficheros](https://github.com/GabrielCourses/web_development/tree/main/HTML/ficheros)
 
 ### ¿Pero qué es una etiqueta en HTML?
 

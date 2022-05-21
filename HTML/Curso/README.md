@@ -14,7 +14,3 @@ Es decir el código tiene que tener el siguiente aspecto:
 
 ![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/HTML/image/p.png)
 
-$$x = \hat{\beta}$$
-
-hola mundo $x = \hat{\beta}$
-
