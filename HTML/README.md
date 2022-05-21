@@ -8,15 +8,19 @@ Para comenzar a explorar esta herramienta (aclarar que no es un lenguaje) vamos 
 
 ### ¿Pero qué es una etiqueta en HTML?
 
-Las etiquetas HTML son fragmentos de código que permiten crear elementos HTML, estructuras básicas HTML. Por ejemplo, podríamos crear un párrafo con una etiqueta HTML, la cual sería la etiqueta \<p\>.
+Las etiquetas HTML son fragmentos de código que permiten crear elementos HTML, estructuras básicas HTML. Por ejemplo, podríamos crear un párrafo con la etiqueta \<p\>.
 
 ```
 <!DOCTYPE html>
 <htlm>
 
 <head>
+
+	<p>
+		Esto es un párrafo.
+	</p>
 	
-	</head>
+</head>
 	
 </html>
 ```
@@ -49,13 +53,13 @@ Si queremos que todo el contenido de nuestra página sea de un solo color, digam
 }
 ```
 
-Para enlazar nuestros 2 archivos ejercicio1.html y estilo.css agregamos dentro de \<head\> 
+Para enlazar nuestros 2 archivos ejercicio1.html y estilo.css agregamos dentro de \<head\> la siguiente línea de código: 
 
 ```
-<link rel="stylesheet" type=	"text/css" href="estilo.css">
+<link rel="stylesheet" type="text/css" href="estilo.css">
 ```
 
-Si insertamos la anterior linea de código y recargamos nuestra página, notaras que todos los títulos cambiaron a azul.
+Nota cada atributo que estamos ocupando, no es necesario que lo comprendas del todo ya que aún no revisamos la parte de **estilo en cascada CSS**. Guardamos los cambios y le damos un **refresh** a la página en nuestro navegador, entonces obtenemos:
 
 ![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/HTML/image/blue.png)
 
