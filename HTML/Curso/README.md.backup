@@ -67,3 +67,23 @@ En el archivo new_page.htlm seguido de nuestro enlace. Colocamos un párrafo que
 <p>Welcome to <b>New page</b>
 ```
 
+Ahora podemos ir de una a otra página, aunque notemos que para el argumento href basto con poner el nombre del archivo. Esto es por que los dos archivos se encuentran en la misma carpeta.
+
+### Enlaces entre carpetas distintas
+
+1. Dentro de la carpeta ficheros, voy a crear una nueva carpeta llamada **directorio2**.
+2. Copio el archivo new_page.html a directorio2
+3. Cambio el nombre de new\_page.html a other\_page.html
+
+Abrimos el archivo index.html y en la línea con la etiqueta \<a href = ""\> colocamos:
+
+```
+<a href="directorio2/other_page.html">Otra página</a>
+```
+
+De index.html puedo llegar a other_page.html. ¿Ahora como hago para de other\_page.html enlazar con index.html. Tengo que modificar la etiqueta \<a href = ""\> de la siguiente manera:
+
+```
+<a href="../index.html">Página indice</a>
+```
+
