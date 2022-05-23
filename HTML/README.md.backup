@@ -26,7 +26,7 @@ Las etiquetas HTML son fragmentos de código que permiten crear elementos HTML, 
 </html>
 ```
 
-Si notas el etiquetado anterior, verás que \<head\> está dentro de la etiqueta \<html\> y a su vez \<p\> dentro de la etiqueta \<body\>.
+Si notas el etiquetado anterior, verás que \<head\> está dentro de la etiqueta \<html\> y a su vez <p> de
 
 ### La etiqueta \<title\>
 
