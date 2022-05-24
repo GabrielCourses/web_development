@@ -87,3 +87,24 @@ De index.html puedo llegar a other_page.html. ¿Ahora como hago para de other\_p
 <a href="../index.html">Página indice</a>
 ```
 
+Guardamos y cerramos.
+
+## Enlaces a otras páginas de internet
+
+Abrimos nuestra archivo index.html. Vamos insertar un enlace al video de YouTube donde se encuentra tu tarea1, no olvides incluir el protocolo https. 
+
+Después del primer vinculo escribimos:
+
+```
+<a href = "https://www.youtube.com/watch?v=oY-rbawd3oQ&t=24s">Tarea 1 </a>
+``` 
+
+Notas que el par de vinculos estan en una misma línea en el navegador, para corregirlo ponemos un salto de línea \<br\> después del primer enlance.
+
+## Abrir enlaces en una nueva pestaña
+
+Con nuestro mismo archivo index.html vamos agregar otro atributo al elemento \<a\> llamado **target**. Ahora vamos a enlazar a la página del colegio.
+
+```
+<a href = "http://cdmx.conalep.edu.mx/tlalpan1/inicio" target = "_PLANK">Plantel I</a>
+```
