@@ -109,6 +109,8 @@ Vamos a partir de un nuevo archivo en este caso agregamos los elementos básicos
 </html>
 ```
 
+Guardamos con el nombre: historia.html
+
 Ahora insertamos en siguiente párrafo dentro de la etiqueta body:
 
 La especie humana ha evolucionado de otras especies que no eran humanas. Para entender nuestra naturaleza, debemos conocer sus orígenes y su historia biológica. Esta historia ha sido reconstruida con la ayuda de muchas disciplinas científicas: la paleontología, la biogeografía, el estudio comparativo de los organismos vivos, la antropología y en épocas recientes, la biología molecular.
@@ -121,23 +123,31 @@ Lo hacemos con la etiqueta \<h2\> y con la etiqueta \<p\>.
 
 Ejemplo:
 
-Capaces de entender
+```
+<h2>Capaces de entender</h2>
 
-Los seres humanos actuales somos descendientes de los primeros Homo sapiens, cuyo nombre significa "hombre inteligente" u "hombre capaz de entender". Se sabe que ya hace 40 mil años, el Hombre de Cro-Magnon (cuyo nombre se debe al lugar donde fueron encontrados sus restos en Francia) usaba armas y herramientas hechas de piedras, huesos y cuernos, contaba con una organización social y vivía de la caza.
+	<p>	
+	Los seres humanos actuales somos descendientes de los primeros Homo sapiens, cuyo nombre significa "hombre inteligente" u "hombre capaz de entender". Se sabe que ya hace 40 mil años, el Hombre de Cro-Magnon (cuyo nombre se debe al lugar donde fueron encontrados sus restos en Francia) usaba armas y herramientas hechas de piedras, huesos y cuernos, contaba con una organización social y vivía de la caza.
+	</p>
+```
 
-- Usar la etiqueta \<strong\>, \<b\>
+- Usar la etiqueta \<strong\>, \<b\>. Ambas etiquetas cambiaran a tipo de fuente **negrita.**
 - Crear un tercer párrafo ahora con \<h3\>
 
- La cultura
+```
+<h3>La cultura</h3>
+<p>
+	Hemos hablado de los pasos más importantes de la evolución biológica de los seres humanos. Sin embargo, hay que añadir que también nos distinguen de nuestros antepasados directos diferencias no biológicas a las que podemos llamar culturales, y que son típicamente humanas, como la fabricación de herramientas, el lenguaje simbólico, el saber que nos vamos a morir algún día, una organización social basada en la división del trabajo, el desarrollo de una capacidad moral y el establecimiento de relaciones afectivas más profundas y variadas.
+</p>
+```
 
-Hemos hablado de los pasos más importantes de la evolución biológica de los seres humanos. Sin embargo, hay que añadir que también nos distinguen de nuestros antepasados directos diferencias no biológicas a las que podemos llamar culturales, y que son típicamente humanas, como la fabricación de herramientas, el lenguaje simbólico, el saber que nos vamos a morir algún día, una organización social basada en la división del trabajo, el desarrollo de una capacidad moral y el establecimiento de relaciones afectivas más profundas y variadas.
 
-- Etiqueta \<s\>.
-- Etiqueta \<blockquote\>
-- Etiquta \<hr/\>
-- Etiqueta \<em\>\</em\>
-- Etiqueta \<i\>\</i\>
-- Insertar comentarios
+- Etiqueta \<s\>. Tachar texto.
+- Etiqueta \<blockquote\>. Citar texto.
+- Etiqueta \<hr/\>. Insertar o dibujar línea separadora.
+- Etiqueta \<em\>\</em\>. Tipo de texto _cursiva._
+- Etiqueta \<i\>\</i\>. Tipo de texto _cursiva_
+- Insertar comentarios. \<!--Esto es un comentario en html--\> 
 
 ## Contenido multimedia
 
@@ -163,7 +173,7 @@ Guardamos como: gatitos.html
 
 **Insertar imagen ubicada en la misma carpeta**
 
-Usamos la siguiente etiqueta:
+Con el elemento o etiqueta **img** insertamos imágenes junto con el atributo src. Veamos el siguiente ejemplo:
 
 ```
 <img src="gatito.jpeg">
@@ -171,14 +181,42 @@ Usamos la siguiente etiqueta:
 
 **Insertar imagen ubicada en la otra carpeta**
 
-Basta que al atributo src, le indiquemos donde esta la ruta de la imagen.
+Basta que al atributo src, le indiquemos cual es la ruta de la imagen. En el caso de que tengas la imagen contenida en esta carpeta como esta en el repositorio, escribiríamos:
+
+```
+<img src="imagenes/gatito2.jpeg">
+```
 
 **Usar el atributo alt**
 
-Si por alguna razón no carga la imágen podemos usar el atributo alt 
+Si por alguna razón no carga la imagen podemos usar el atributo alt para que en ausencia de la imagen aparezca un texto.
 
 ```
-<img src="gatito2.jpeg" alt="Imagen de conejito2">
+<img src="gatito2.jpeg" alt="Imagen de gatito2">
 ```
 
+Si queremos que al pasar el cursor sobre la imagen, nos de información o el nombre de la imagen usamos el atributo **title.**
 
+```
+<img src="gatito.jpeg" title="Mi gatito">
+```
+
+Cambiar el alto y el ancho de las imágenes. Insertamos los atributos **widht** y **height**
+
+```
+<img src="gatito.jpeg" title="Mi gatito" width="400px" height="300">
+```
+
+**Insertar audio en la misma carpeta**
+
+Para esta tarea ocupamos la etiqueta \<audio\> conjuntamente con el atributo src y el atributo controls que nos permitira manipular el archivo (pause, play)
+
+```
+<audio src="mecano.mp3" controls>
+```
+
+**Insertar video**
+
+```
+<video src="gadgets.mp4" controls>
+```
