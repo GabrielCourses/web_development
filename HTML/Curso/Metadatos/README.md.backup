@@ -212,11 +212,24 @@ Cambiar el alto y el ancho de las imágenes. Insertamos los atributos **widht** 
 Para esta tarea ocupamos la etiqueta \<audio\> conjuntamente con el atributo src y el atributo controls que nos permitira manipular el archivo (pause, play)
 
 ```
-<audio src="mecano.mp3" controls>
+<audio src="mecano.mp3" controls></audio></br>
 ```
 
 **Insertar video**
 
 ```
-<video src="gadgets.mp4" controls>
+<video src="gadgets.mp4" controls></video></br>
 ```
+
+**Insertar audio en otra carpeta**
+
+Ya hemos hecho este ejemplo con páginas y texto, ahora lo haremos con audio pero que este contenido dos carpetas hacia adelante.
+
+```
+<audio src="imagenes/audio/do_it.mp3" controls></audio></br>
+```
+
+***
+**Nota:** ¿Sabrías por que ocupar esta ruta en carpetas contenidas, y no usar la ruta completa?
+***
+
