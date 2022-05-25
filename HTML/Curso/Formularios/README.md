@@ -1,1 +1,1 @@
-![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/HTML/image/formularios.png)
+![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/HTML/image/formulario.png)
