@@ -1,4 +1,4 @@
-![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/html/image/header.png)
+![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/HTML/image/header.png)
 
 # HTML
 
@@ -32,7 +32,7 @@ Si notas el etiquetado anterior, verás que \<head\> está dentro de la etiqueta
 
 Para editar el titulo de nuestra página ocupamos la etiqueta \<title\> como se nota en la siguiente imagen:
 
-![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/html/image/title.png)
+![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/HTML/image/title.png)
 
 Es decir, el título de la página, estará dentro de la etiqueta de apertura \<title\> y la etiqueta de cierre \</title\>.
 
@@ -62,11 +62,11 @@ Para enlazar nuestros 2 archivos ejercicio1.html y estilo.css agregamos dentro d
 
 Nota cada atributo que estamos ocupando, no es necesario que lo comprendas del todo ya que aún no revisamos la parte de **estilo en cascada CSS**. Guardamos los cambios y le damos un **refresh** a la página en nuestro navegador, entonces obtenemos:
 
-![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/html/image/blue.png)
+![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/HTML/image/blue.png)
 
 Ahora, si solo quiero quiero que el primer título de nuestra página sea azul, y los demás me aparezcan con el color que viene por defecto, el negro, entonces, cambio el asterisco del archivo estilo.css por h1
 
-![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/html/image/h1.png)
+![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/HTML/image/h1.png)
 
 Y si queremos pintar a h2 de rojo y a h3 de naranja, editamos nuestro archivo estilo.css
 
@@ -84,7 +84,7 @@ h3 {
 }
 ``` 
 
-![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/html/image/colors.png)
+![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/HTML/image/colors.png)
 
 Recapitulando HTML nos ayuda a darle estructura a la página, en otras palabras serían las cajas como, texto, imagenes, videos, links. Con CSS podemos darle un estilo propio, es decir, la apariencia. Finalmente con JavaScript vamos a darle la funcionalidad, es decir, crear un método para un botón, crear un formulario, etc.
 
