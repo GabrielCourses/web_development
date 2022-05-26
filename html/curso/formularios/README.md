@@ -159,22 +159,29 @@ Creamos otro archivo con los elementos ya vistos
     <form action="registrodedatos.php" method="post">
       Selecciona un país:
       <select name="paises">
-      <optgroup label="Norteamerica">
-	<option value="1">Estados Unidos</option>
-	<option value="2">Canadá</option>
-	<option value="3">México</option>
-      </optgroup>
+	<optgroup label="Norteamerica">
+	  <option value="1">Estados Unidos</option>
+	  <option value="2">Canadá</option>
+	  <option value="3">México</option>
+	</optgroup>
 
-      <optgroup label="Sudamerica">
-	<option value="7">Brasil</option>
-	<option value="8">Argentina</option>
-	<option value="9">Colombia</option>
-	<br>
-      </optgroup>
-
+	<optgroup label="Sudamerica">
+	  <option value="7">Brasil</option>
+	  <option value="8">Argentina</option>
+	  <option value="9">Colombia</option>
+	  <br>
+	</optgroup>
+      </select>
+      <br>    
+      <input type="submit" value="Enviar">
     </form>
 
   </body>
 
 </html>
 ```
+
+Guardamos como: option.html
+
+Abrimos en un brower y cerramos.
+
