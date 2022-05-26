@@ -43,7 +43,7 @@ Le damos un guardar como: new_page.html
 
 Comenzamos eliminando h2, h3 y la línea de comando que enlaza nuestro archivo html con estilo.css, seguido cambiamos el \<title\> a CDMX. Para h1 lo cambiamos a Clases a distancia. Cuando recarguemos el navegador debemos de visualizar lo siguiente:
 
-![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/HTML/image/cdmx.png)
+![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/html/image/cdmx.png)
 
 **Elemento \<a\> junto con el atributo href**
 

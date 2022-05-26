@@ -1,4 +1,4 @@
-![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/HTML/image/formulario.png)
+![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/html/image/formulario.png)
 
 # Formularios
 
