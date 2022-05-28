@@ -35,7 +35,7 @@ Si notas el etiquetado anterior, verás que \<p\> esta dentro de la etiqueta \<b
 Para editar el titulo de nuestra página ocupamos la etiqueta \<title\> como se nota en la siguiente imagen:
 
 ![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/html/image/title.png)
-	
+
 Es decir, el título de la página, estará dentro de la etiqueta de apertura \<title\> y la etiqueta de cierre \</title\>.
 
 Ahora, si queremos usar caracteres especiales, en particular el acento usado en el español, agregamos la etiqueta \<meta\> junto con el atributo charset. 

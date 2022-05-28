@@ -183,5 +183,17 @@ Creamos otro archivo con los elementos ya vistos
 
 Guardamos como: option.html
 
-Abrimos en un brower y cerramos.
+Abrimos en un browser y cerramos.
+
+# Formularios. Parte III.
+
+**Agregar más de una opción**
+
+Creamos un archivo html con los elementos básicos que venimos haciendo:
+
+```
+
+
+
+```
 
