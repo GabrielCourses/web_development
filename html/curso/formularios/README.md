@@ -2,18 +2,22 @@
 
 # Formularios. Parte I.
 
-Ejemplo de un formulario, objetos en las páginas web que nos ayudan a acopiar información de los usuarios, como datos personales, cuestionarios, compras, solicitudes, etc. Dicha información va ser enviada al servidor.
+Los formulario son elementos de html que nos ayudan a acopiar información de los usuarios, como datos personales, encuestas de satisfacción, compras en línea, etc. Dicha información va ser enviada a algún servidor.
 
-¿Que objetos tiene un formulario?
+¿Que atributos tiene un formulario?
 
 - campos de texto
 - contraseñas
 - checkbox
 - botones
 
-**Nota:** Con html solo vamos a crear la interfaz del formulario, no se puede procesar la información, para ello necesitamos un otro lenguaje el cual se ejecute dentro del servidor como por ejemplo **PHP.**
 
-Vamos iniciar con un archivo con los elementos básicos y agregamos tambien una línea de código con el elemento **form** con el cual mandamos llamar al objeto formulario.
+
+***
+**Nota:** Con html solo vamos a crear la interfaz del formulario, no se puede procesar la información, para ello necesitamos un otro lenguaje el cual se ejecute dentro del servidor como por ejemplo **PHP.**
+***
+
+Vamos iniciar con un archivo con los elementos básicos y agregamos también una línea de código con el elemento **form** con el cual mandamos llamar al objeto formulario.
 
 ```
 <!DOCTYPE html>
@@ -95,18 +99,16 @@ Vamos a volver a crear un archivo html con los elementos básicos:
 <!DOCTYPE html>
 <html>
 	
-	<head>
-		<title>Curso Formularios</title>
-		<meta charset="UTF-8">
-	</head>
+  <head>
+    <title>Curso Formularios</title>
+    <meta charset="UTF-8">
+  </head>
 	
-	<body>
-		<form action="registrodedatos.php" method="post">
-		
-		
-		</form>
-		
-	</body>
+  <body>
+    <form action="registrodedatos.php" method="post">
+    
+    </form>
+  </body>
 	
 </html>
 ```
