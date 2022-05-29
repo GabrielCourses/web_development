@@ -2,7 +2,7 @@
 
 # HTML
 
-HTML por sus siglas en inglés, significa Hypertext Markup Language. Es decir, un lenguaje de marcada, para elaborar páginas webs.
+HTML por sus siglas en inglés, significa Hypertext Markup Language. Es decir, un lenguaje de marcado, para elaborar páginas webs.
 
 Para comenzar a explorar esta lenguaje de etiquetado (aclarar que no es un lenguaje de programación) vamos iniciar creando un fichero en un editor de texto plano llamado: ejercicio1.html 
 
@@ -46,6 +46,14 @@ Dentro de la etiqueta \<body\> se sitúa el contenido de la página web.
 
 Dentro de la etiqueta \<h1\> de apertura y \</h1\> de cierre, estará el título del contenido. De la misma manera puedo ir poniendo subtitulos con \<h2\>, \<h3\>, ..., \<h6\>.
 
+```
+ <body>
+    <h1>Aprendiendo programación</h1>
+    <h2>Lenguaje de programación</h2>
+    <h3>Mensaje de prueba</h3>
+  </body>
+```
+
 Vamos a darle color a nuestra página, lo haremos creando un archivo con extensión css llamado: estilo.css 
 
 Si queremos que todo el contenido de nuestra página sea de un solo color, digamos azul
@@ -64,7 +72,9 @@ Para enlazar nuestros 2 archivos ejercicio1.html y estilo.css agregamos dentro d
 <link rel="stylesheet" type="text/css" href="estilo.css">
 ```
 
-Nota cada atributo que estamos ocupando, no es necesario que lo comprendas del todo ya que aún no revisamos la parte de **estilo en cascada CSS**. Guardamos los cambios y le damos un **refresh** a la página en nuestro navegador, entonces obtenemos:
+***
+**Nota:** cada atributo que estamos ocupando no es necesario que lo comprendas del todo ya que aún no revisamos la parte de **estilo en cascada CSS**. Guardamos los cambios y le damos un **refresh** a la página en nuestro navegador, entonces obtenemos:
+***
 
 ![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/html/image/blue.png)
 
@@ -91,7 +101,6 @@ h3 {
 ![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/html/image/colors.png)
 
 Recapitulando HTML nos ayuda a darle estructura a la página, en otras palabras serían las cajas como, texto, imagenes, videos, links. Con CSS podemos darle un estilo propio, es decir, la apariencia. Finalmente con JavaScript vamos a darle la funcionalidad, es decir, crear un método para un botón, crear un formulario, etc.
-
 
 # CSS
 
