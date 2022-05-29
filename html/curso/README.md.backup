@@ -82,13 +82,13 @@ Ahora podemos ir de una a otra página, aunque notemos que para el argumento hre
 2. Copio el archivo new_page.html a directorio2
 3. **Cambio el nombre de new\_page.html a other\_page.html**
 
-Abrimos el archivo index.html y en la línea con la etiqueta \<a href=""\> colocamos:
+Abrimos el archivo index.html y en la línea con la etiqueta \<a href = ""\> colocamos:
 
 ```
 <a href="directorio2/other_page.html">Otra página</a>
 ```
 
-De index.html puedo llegar a other_page.html. ¿Ahora como hago para de other\_page.html enlazar con index.html. Tengo que modificar la etiqueta \<a href=""\> de la siguiente manera:
+De index.html puedo llegar a other_page.html. ¿Ahora como hago para de other\_page.html enlazar con index.html. Tengo que modificar la etiqueta \<a href = ""\> de la siguiente manera:
 
 ```
 <a href="../index.html">Página indice</a>
@@ -103,7 +103,7 @@ Abrimos nuestra archivo index.html. Vamos insertar un enlace al video de YouTube
 Después del primer vinculo escribimos:
 
 ```
-<a href="https://www.youtube.com/watch?v=oY-rbawd3oQ&t=24s">Tarea 1 </a>
+<a href = "https://www.youtube.com/watch?v=oY-rbawd3oQ&t=24s">Tarea 1 </a>
 ``` 
 
 Notas que el par de vinculos estan en una misma línea en el navegador, para corregirlo ponemos un salto de línea \<br\> después del primer enlance.

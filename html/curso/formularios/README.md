@@ -19,18 +19,18 @@ Vamos iniciar con un archivo con los elementos básicos y agregamos tambien una 
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<title>Mi formulario</title>
-		<meta charset="UTF-8">
-	</head>
+  <head>
+    <title>Mi formulario</title>
+    <meta charset="UTF-8">
+  </head>
 	
-	<body>
-		<form action="registrodedatos.php" method="post">
-		
-		</form>
-	</body>
-	
-<html>
+  <body>
+    <form action="registrodedatos.php" method="post">
+
+    </form>
+  </body>
+
+</html>
 ```
 
 Guardamos el archivo como: miformulario.html
