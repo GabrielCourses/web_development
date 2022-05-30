@@ -11,13 +11,11 @@ Los formulario son elementos de html que nos ayudan a acopiar información de lo
 - checkbox
 - botones
 
-
-
 ***
-**Nota:** Con html solo vamos a crear la interfaz del formulario, no se puede procesar la información, para ello necesitamos un otro lenguaje el cual se ejecute dentro del servidor como por ejemplo **PHP.**
+**Nota:** Con html solo vamos a crear la interfaz del formulario, no se puede procesar la información, para ello necesitamos otro lenguaje el cual se ejecute dentro del servidor como por ejemplo **PHP.**
 ***
 
-Vamos iniciar con un archivo con los elementos básicos y agregamos también una línea de código con el elemento **form** con el cual mandamos llamar al objeto formulario.
+Vamos iniciar con un archivo con los elementos básicos y agregamos también una línea de código con el elemento **form** con el cual mandamos ejecutamos el elemento formulario.
 
 ```
 <!DOCTYPE html>
@@ -31,7 +29,7 @@ Vamos iniciar con un archivo con los elementos básicos y agregamos también una
   <body>
     <form action="registrodedatos.php" method="post">
 
-    </form>
+    </form>  
   </body>
 
 </html>
@@ -39,13 +37,13 @@ Vamos iniciar con un archivo con los elementos básicos y agregamos también una
 
 Guardamos el archivo como: miformulario.html
 
-Y lo ejecutamos en dentro de un navegador para verificar que todo este bien.
+Y lo ejecutamos dentro de un navegador para verificar que todo este bien.
 
-Ahora puedes notar que el elemento **form**, cuenta con 2 atributos, de momento no vamos a dar alguna definición de que hace estos atributos, ya que aún no hemos abordado el tema de PHP.
+Ahora puedes notar que el elemento **form**, cuenta con 2 atributos, de momento no vamos a dar alguna explicación de que hacen estos atributos, ya que aún no hemos abordado el tema de PHP.
 
 ## El elemento input
 
-Dentro de el elemento form empezamos llamando al elemento input el cual nos va ayudar con los campos de entrada, es decir, debemos entender que el elemento input tiene atributos para colocar, cajas de texto, checkbox, ratios, etc.
+Dentro de él elemento form empezamos llamando al elemento input el cual nos va ayudar con los campos de entrada, es decir, debemos entender que el elemento input tiene atributos para colocar, cajas de texto, checkbox, ratios, etc.
 
 ```
 <!-- Destro de la etiqueta form-->
@@ -53,9 +51,11 @@ Ingresa tu nombre completo:
 <input type="text" name="name" value="Default text" size="20">
 ```
 
+![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/html/image/form_atributes.png)
+
 En este caso definimos un texto por defecto, si no lo queremos hacer basta con dejar comillas dobles
 
-Insertemos otra caja de texto, en este caso el correo electronico:
+Insertemos otra caja de texto, en este caso el correo electrónico:
 
 ```
 Ingresa tu correo:
@@ -69,7 +69,7 @@ Ingresa tu contraseña:
 <input type="password" name="pass" value="" size="20">	
 ```
 
-**type = checkbox**
+**type=checkbox**
 
 ```
 Selecciona el curso de tu interés: <br>
@@ -79,7 +79,7 @@ Selecciona el curso de tu interés: <br>
 <input type="radio" name="data">Data Engineering<br>
 ```
 
-El tipo usado fue radio, ahora si radio lo cambio por checkbox:
+Guarda y recarga en el navegador, enseguida agregamos el atributo type="checkbox"
 
 ```
 Selecciona el curso de tu interés: <br>
@@ -93,7 +93,7 @@ Guardamos y cerramos
 
 # Formularios. Parte II.  
 
-Vamos a volver a crear un archivo html con los elementos básicos:
+Creamos un archivo html con los elementos básicos includido la etiqueta form:
 
 ```
 <!DOCTYPE html>
@@ -113,9 +113,8 @@ Vamos a volver a crear un archivo html con los elementos básicos:
 </html>
 ```
 
-Guardamos como: formulario2.html
-
-Y cargamos en el navegador.
+- Guardamos como: formulario2.html
+- Cargamos en el navegador.
 
 Comenzamos ingresando una caja de texto:
 
@@ -127,6 +126,8 @@ Ingresa tu nombre:
 
 **El elemento select**
 
+Una tarea común en los formularios es validar la información de entrada, es decir, restringir la entrada del campo a solo unas opciones. Lo anterior lo conseguimos en html con el elemento **select.**
+
 ```
 Selecciona tu deporte favorito:
 <select name="sport">
@@ -134,11 +135,12 @@ Selecciona tu deporte favorito:
 	<option value="2">Futbol soccer</option>
 	<option value="3">Baloncesto</option>
 	<option value="4">Voleibol</option>
-	
 </select>
 ```
 
-**type submit**
+**type=submit**
+
+Como ya hemos comentado, conjuntamente con html trabajan otros lenguajes para darle diseño y funcionalidad, en este caso insertaremos un botón que ejecutara una acción, aunque por si sola no terminará de realizar la tarea, es decir, continuamos con la parte de construir la estructura de nuestra página,
 
 ```
 <input type="submit" value="Envío de datos">
