@@ -2,7 +2,9 @@
 
 # Primeras etiquetas
 
-Ahora que ya sabemos como crear y cargar nuestro primer ejemplo html vamos aprender sobre las primeras etiquetas en HTML. Para esto partimos del archivo **ejercicio1.html** ubicado en la carpeta **ficheros** y le damos un guardar como: **index.html** conservamos el archivo **estilo.css**
+Ahora que ya sabemos como crear y cargar nuestro primer ejemplo html vamos aprender sobre las primeras etiquetas en HTML. Para esto partimos del archivo **ejercicio1.html** ubicado en la carpeta **ficheros** y le damos un guardar como: **index.html** 
+
+También conservamos el archivo **estilo.css** que habíamos creado anteriormente.
 
 ### La etiqueta \<p\>
 
