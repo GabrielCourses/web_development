@@ -2,13 +2,14 @@
 
 # Primeras etiquetas
 
-Ahora que ya sabemos como crear y cargar nuestro primer ejemplo html vamos aprender sobre las primeras etiquetas en HTML. Para esto nuevamente iniciamos con el archivo **ejercicio1.html** y le damos un guardar como: **index.html** conservamos el archivo **estilo.css**
+Ahora que ya sabemos como crear y cargar nuestro primer ejemplo html vamos aprender sobre las primeras etiquetas en HTML. Para esto partimos del archivo **ejercicio1.html** ubicado en la carpeta **ficheros** y le damos un guardar como: **index.html** conservamos el archivo **estilo.css**
 
 ### La etiqueta \<p\>
 
-Antes de comenzar con las nuevas etiquetas, editamos el archivo. En esta ocasión solo necesitamos un encabezado dentro del body y continuamos insertando el siguiente parrafo con la etiqueta \<p\>
+Antes de comenzar con las nuevas etiquetas, editamos el archivo. En esta ocasión solo necesitamos un encabezado dentro del body y continuamos insertando el siguiente párrafo con la etiqueta \<p\>
 
-```HTML 5 (HyperText Markup Language, versión 5) es la quinta revisión importante del lenguaje básico de la World Wide Web, HTML. HTML5 específica dos variantes de sintaxis para HTML: una «clásica», HTML (text/html), conocida como HTML5, y una variante XHTML conocida como sintaxis XHTML 5 que deberá servirse con sintaxis XML (application/xhtml+xml).1​2​ Esta es la primera vez que HTML y XHTML se han desarrollado en paralelo. La versión definitiva de la quinta revisión del estándar se publicó en octubre de 2014. 
+```
+HTML 5 (HyperText Markup Language, versión 5) es la quinta revisión importante del lenguaje básico de la World Wide Web, HTML. HTML5 específica dos variantes de sintaxis para HTML: una «clásica», HTML (text/html), conocida como HTML5, y una variante XHTML conocida como sintaxis XHTML 5 que deberá servirse con sintaxis XML (application/xhtml+xml).1​2​ Esta es la primera vez que HTML y XHTML se han desarrollado en paralelo. La versión definitiva de la quinta revisión del estándar se publicó en octubre de 2014. 
 ```
 
 Es decir el código tiene que tener el siguiente aspecto:
@@ -19,7 +20,8 @@ Es decir el código tiene que tener el siguiente aspecto:
 
 Vamos a usar la etiqueta \<b\> para poner texto en negritas. En el párrafo anterior vamos a colocársela a las palabras World Wide Web:
 
-```HTML 5 (HyperText Markup Language, versión 5) es la quinta revisión importante del lenguaje básico de la <b>World Wide Web</b>, HTML. HTML5 específica dos variantes de sintaxis para HTML: una «clásica», HTML (text/html), conocida como HTML5, y una variante XHTML conocida como sintaxis XHTML 5 que deberá servirse con sintaxis XML (application/xhtml+xml).1​2​ Esta es la primera vez que HTML y XHTML se han desarrollado en paralelo. La versión definitiva de la quinta revisión del estándar se publicó en octubre de 2014. 
+```
+HTML 5 (HyperText Markup Language, versión 5) es la quinta revisión importante del lenguaje básico de la <b>World Wide Web</b>, HTML. HTML5 específica dos variantes de sintaxis para HTML: una «clásica», HTML (text/html), conocida como HTML5, y una variante XHTML conocida como sintaxis XHTML 5 que deberá servirse con sintaxis XML (application/xhtml+xml).1​2​ Esta es la primera vez que HTML y XHTML se han desarrollado en paralelo. La versión definitiva de la quinta revisión del estándar se publicó en octubre de 2014. 
 ```
 
 **Comando 'Crtl + May + i' para el navegador.**
@@ -32,7 +34,8 @@ Abrimos la ventana 'Herramientas de desarrollador' y al dar click en el menu ins
 
 Para dar saltos de línea dentro de nuestro párrafo ocupamos la etiqueta \<br\>
 
-```HTML 5 (HyperText Markup Language, versión 5) es la quinta revisión importante del lenguaje básico de la <b>World Wide Web</b>, HTML. HTML5 específica dos variantes de sintaxis para HTML: una «clásica», HTML (text/html), conocida como HTML5, y una variante XHTML conocida como sintaxis XHTML 5 que deberá servirse con sintaxis XML (application/xhtml+xml).1​2​ Esta es la primera vez que HTML y XHTML se han desarrollado en paralelo. La versión definitiva de la quinta revisión del estándar se publicó en octubre de 2014. 
+```
+HTML 5 (HyperText Markup Language, versión 5) es la quinta revisión importante del lenguaje básico de la <b>World Wide Web</b>, HTML. HTML5 específica dos variantes de sintaxis para HTML: una «clásica», HTML (text/html), conocida como HTML5, y una variante XHTML conocida como sintaxis XHTML 5 que deberá servirse con sintaxis XML (application/xhtml+xml).1​2​ Esta es la primera vez que HTML y XHTML se han desarrollado en paralelo. La versión definitiva de la quinta revisión del estándar se publicó en octubre de 2014.
 <br>Este es un salto de línea.
 ```
 
@@ -44,23 +47,23 @@ Los enlaces o vínculos se crean con la etiqueta \<a\>. Para esta parte vamos a 
 
 ![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/html/image/ejercicio1.png)
 
-Le damos un guardar como: new_page.html
+- Guardar como: new_page.html
 
-Comenzamos eliminando h2, h3 y la línea de comando que enlaza nuestro archivo html con estilo.css, seguido cambiamos el \<title\> a CDMX. Para h1 lo cambiamos a Clases a distancia. Cuando recarguemos el navegador debemos de visualizar lo siguiente:
+Comenzamos eliminando h2, h3 y la línea de comando que enlaza nuestro archivo html con estilo.css, seguido cambiamos el \<title\> a CDMX. Para \<h1\> lo cambiamos a Clases a distancia. Cuando recarguemos el navegador debemos de visualizar lo siguiente:
 
 ![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/html/image/cdmx.png)
 
-**Elemento \<a\> junto con el atributo href**
+### Elemento \<a\> junto con el atributo href**
 
-Para esta parte vamos abrir el archivo: index.html
+Ocuparemos el archivo index.html que creamos anteriormente.
 
-Insertamos la etiqueta \<a\> después de \<h1\> junto con el atributo href, al cual le vamos asignar el enlace a donde queremos que nos envíe el vinculo.
+En index.html insertamos la etiqueta \<a\> después de \<h1\> junto con el atributo href, al cual le vamos asignar el enlace a donde queremos que nos envíe el vinculo. Lo que queda entre las etiquetas de apertura y cierre es lo que queremos mostrar como enlace en nuestra página.
 
 ```
 <a href="new_page.html">Página nueva</a>
 ```
 
-Y también hacemos lo mismos con el nuestro archivo new_page.html
+Y también hacemos lo mismos con el nuestro archivo: new_page.html
 
 ```
 <a href="index.html">Página indice</a>
