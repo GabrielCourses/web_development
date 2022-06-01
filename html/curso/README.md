@@ -8,7 +8,7 @@ También conservamos el archivo **estilo.css** que habíamos creado anteriorment
 
 ### La etiqueta \<p\>
 
-Antes de comenzar con las nuevas etiquetas, editamos el archivo. En esta ocasión solo necesitamos un encabezado dentro del body y continuamos insertando el siguiente párrafo con la etiqueta \<p\>
+Antes de comenzar con las nuevas etiquetas, editamos el archivo. En esta ocasión solo necesitamos un encabezado dentro del body, es decir, eliminamos \<h2\>, \<h3\>, finalmente enseguida de \<h1\> insertando el siguiente párrafo con la etiqueta \<p\>.
 
 ```
 HTML 5 (HyperText Markup Language, versión 5) es la quinta revisión importante del lenguaje básico de la World Wide Web, HTML. HTML5 específica dos variantes de sintaxis para HTML: una «clásica», HTML (text/html), conocida como HTML5, y una variante XHTML conocida como sintaxis XHTML 5 que deberá servirse con sintaxis XML (application/xhtml+xml).1​2​ Esta es la primera vez que HTML y XHTML se han desarrollado en paralelo. La versión definitiva de la quinta revisión del estándar se publicó en octubre de 2014. 
@@ -87,7 +87,7 @@ Ahora podemos ir de una a otra página, aunque notemos que para el argumento hre
 2. Copio el archivo new_page.html a directorio2
 3. **Cambio el nombre de new\_page.html a other\_page.html**
 
-Abrimos el archivo index.html y en la línea con la etiqueta \<a href=""\> colocamos:
+Abrimos el archivo index.html y en la línea con la etiqueta \<a href=" "\> colocamos:
 
 ```
 <a href="directorio2/other_page.html">Otra página</a>
