@@ -146,9 +146,9 @@ Como ya hemos comentado, conjuntamente con html trabajan otros lenguajes para da
 <input type="submit" value="Envío de datos">
 ```
 
-## Agrupar opciones
+## Agrupar opciones, etiqueta \<optgroup\>
 
-Creamos otro archivo con los elementos ya vistos
+Vamos a crear un nuevo archivo con el siguiente código:
 
 ```
 <!DOCTYPE html>
@@ -163,20 +163,18 @@ Creamos otro archivo con los elementos ya vistos
     <form action="registrodedatos.php" method="post">
       Selecciona un país:
       <select name="paises">
-	<optgroup label="Norteamerica">
-	  <option value="1">Estados Unidos</option>
-	  <option value="2">Canadá</option>
-	  <option value="3">México</option>
-	</optgroup>
+	    <optgroup label="Norteamerica">
+	      <option value="1">Estados Unidos</option>
+	      <option value="2">Canadá</option>
+	      <option value="3">México</option>
+		</optgroup>
 
-	<optgroup label="Sudamerica">
-	  <option value="7">Brasil</option>
-	  <option value="8">Argentina</option>
-	  <option value="9">Colombia</option>
-	  <br>
-	</optgroup>
-      </select>
-      <br>    
+		<optgroup label="Sudamerica">
+		  <option value="7">Brasil</option>
+		  <option value="8">Argentina</option>
+		  <option value="9">Colombia</option><br>
+		</optgroup>
+      </select><br>    
       <input type="submit" value="Enviar">
     </form>
 
@@ -187,7 +185,7 @@ Creamos otro archivo con los elementos ya vistos
 
 Guardamos como: option.html
 
-Abrimos en un browser y cerramos.
+En este caso basta con abrir el archivo en un navegador y darnos cuenta como con el elemento **optgroup** podemos agrupar la lista desplegable. 
 
 # Formularios. Parte III.
 
@@ -196,8 +194,43 @@ Abrimos en un browser y cerramos.
 Creamos un archivo html con los elementos básicos que venimos haciendo:
 
 ```
+<!DOCTYPE html>
+<html>
+	
+  <head>
+    <title>Selección múltiple</title>
+    <meta charset="UTF-8">
+  </head>
+	
+  <body>
+    <form action="registrodedatos.php" method="post">
+    
+    </form>
+  </body>
+	
+</html>
+```
 
+Guardamos el archivo como: multiple.html
 
+Hasta ahora hemos visto como elegir una opción dentro de una lista de opciones usando el elemento **select**, pero que ocurre si queremos elegir más de una opción.
 
+Dentro de la etiqueta body escribimos el siguiente código:
+
+```
+    <form action="registrodedatos.php" method="post">
+      Seleccione o varios platillos(Oprima la tecla Ctrl para elegir más de una opción)<br>
+      <select name="platillo[]" size="6" multiple>
+		<option value="1">Pozole</option>
+		<option value="2">Birria</option>
+		<option value="3">Tacos</option>
+		<option value="4">Barbacoa</option>
+		<option value="5">Tostadas</option>
+		<option value="6">Chiles rellenos</option>
+		<option value="7">Pollo</option>
+      </select><br>
+
+      <input type="submit" value="Enviar">
+    </form>
 ```
 

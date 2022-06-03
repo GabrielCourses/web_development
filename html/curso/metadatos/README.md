@@ -136,7 +136,7 @@ Ejemplo:
 <h3>La cultura</h3>
 <p>
   Hemos hablado de los pasos más importantes de la evolución biológica de los seres humanos. Sin embargo, hay que añadir que también nos distinguen de nuestros antepasados directos diferencias no biológicas a las que podemos llamar culturales, y que son típicamente humanas, como la fabricación de herramientas, el lenguaje simbólico, el saber que nos vamos a morir algún día, una organización social basada en la división del trabajo, el desarrollo de una capacidad moral y el establecimiento de relaciones afectivas más profundas y variadas.
-  </p>
+</p>
 ```
 
 
