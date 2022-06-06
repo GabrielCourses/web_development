@@ -15,7 +15,7 @@ Los formulario son elementos de html que nos ayudan a acopiar información de lo
 **Nota:** Con html solo vamos a crear la interfaz del formulario, no se puede procesar la información, para ello necesitamos otro lenguaje el cual se ejecute dentro del servidor como por ejemplo **PHP.**
 ***
 
-Vamos iniciar con un archivo con los elementos básicos y agregamos también una línea de código con el elemento **form** con el cual mandamos ejecutamos el elemento formulario.
+Vamos crear un archivo con los elementos básicos y agregamos también una línea de código con el elemento <code>\<form\><code> con el cual ejecutamos el elemento formulario.
 
 ```
 <!DOCTYPE html>
@@ -37,39 +37,40 @@ Vamos iniciar con un archivo con los elementos básicos y agregamos también una
 
 Guardamos el archivo como: miformulario.html
 
-Y lo ejecutamos dentro de un navegador para verificar que todo este bien.
+Lo ejecutamos dentro de un navegador para verificar que todo este bien.
 
-Ahora puedes notar que el elemento **form**, cuenta con 2 atributos, de momento no vamos a dar alguna explicación de que hacen estos atributos, ya que aún no hemos abordado el tema de PHP.
+Ahora puedes notar que el elemento <code>form</code>, cuenta con 2 atributos <code>action</code> y <code>method</code>, de momento no vamos a dar alguna explicación de que hacen estos atributos, ya que aún no hemos abordado el tema de PHP.
 
 ## El elemento input
 
-Dentro de él elemento form empezamos llamando al elemento input el cual nos va ayudar con los campos de entrada, es decir, debemos entender que el elemento input tiene atributos para colocar, cajas de texto, checkbox, ratios, etc.
+Dentro de él elemento <code>form</code> empezamos llamando al elemento <code>\<input\><code> el cual nos va ayudar con los campos de entrada, es decir, debemos entender que el elemento <code>input</code> tiene atributos para colocar, cajas de texto, checkbox, ratios, etc.
+
+Empezamos colocando un tipo de entrada del tipo <code>"text"</code>.
 
 ```
-<!-- Destro de la etiqueta form-->
 Ingresa tu nombre completo:
-<input type="text" name="name" value="Default text" size="20">
+<input type="text" name="name" value="Default text" size="20"><br><br>
 ```
 
 ![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/html/image/form_atributes.png)
 
-En este caso definimos un texto por defecto, si no lo queremos hacer basta con dejar comillas dobles
+En este caso definimos un texto por defecto, si no lo queremos hacer basta con dejar comillas dobles <code>""</code>.
 
-Insertemos otra caja de texto, en este caso el correo electrónico:
+Insertemos otra caja de texto, en este caso de tipo <code>"email"</code>:
 
 ```
 Ingresa tu correo:
-<input type="text" name="correo" value="" size="25">
+<input type="email" name="correo" value="" size="25">
 ```
 
-Insertemos otro tipo de entrada, una **constraseña:**
+Insertemos otro tipo de entrada de tipo <code>"password"</code>
 
 ```
 Ingresa tu contraseña:
-<input type="password" name="pass" value="" size="20">	
+<input type="password" name="pass" value="" size="20"><br><br>
 ```
 
-**type=checkbox**
+**type="checkbox"**
 
 ```
 Selecciona el curso de tu interés: <br>

@@ -92,7 +92,7 @@ Vamos a ocupar las listas para presentar la información de la página que sabem
 </ul>
 ```
 
-Para cambiar a una lista ordenada, basta cambiar \<ul\> por \<ol\>.
+Para cambiar a una lista ordenada, basta cambiar <code>\<ul\></code> por <code>\<ol\></code>.
 
 ## Lista anidadas
 
@@ -163,12 +163,12 @@ Crear un tercer párrafo ahora con <code>\<h3\></code>:
 ```
 
 
-- Etiqueta \<s\>. Tachar texto.
-- Etiqueta \<blockquote\>. Citar texto.
-- Etiqueta \<hr/\>. Insertar o dibujar línea separadora.
-- Etiqueta \<em\>\</em\>. Tipo de texto _cursiva._
-- Etiqueta \<i\>\</i\>. Tipo de texto _cursiva_
-- Insertar comentarios. \<!--Esto es un comentario en html--\> 
+- Etiqueta <code>\<s\></code>. Tachar texto.
+- Etiqueta <code>\<blockquote\></code>. Citar texto.
+- Etiqueta <code>\<hr/\></code>. Insertar o dibujar línea separadora.
+- Etiqueta <code>\<em\>\</em\></code>. Tipo de texto _cursiva._
+- Etiqueta <code>\<i\>\</i\><code>. Tipo de texto _cursiva_
+- Insertar comentarios. <code>\<!--Esto es un comentario en html--\></code>
 
 # Contenido multimedia
 
@@ -200,7 +200,7 @@ Con el elemento o etiqueta <code>\<img\></code> insertamos imágenes conjuntamen
 <img src="gatito.jpeg">
 ```
 
-**Insertar imagen ubicada en la otra carpeta**
+**Insertar imagen ubicada en otra carpeta**
 
 Cuando la imagen se encuentra en la misma carpeta basta que al atributo <code>src</code> le indiquemos el nombre del archivo. En el caso de que tengas la imagen contenida en la siguiente carpeta de nombre 'imagenes' como esta en el repositorio, escribiríamos:
 
@@ -216,13 +216,13 @@ Si por alguna razón no carga la imagen podemos usar el atributo alt para que en
 <img src="gatito2.jpeg" alt="Imagen de gatito2">
 ```
 
-Si queremos que al pasar el cursor sobre la imagen, nos de información o el nombre de la imagen usamos el atributo **title.**
+Si queremos que al pasar el cursor sobre la imagen, nos de información o el nombre de la imagen usamos el atributo <code>title</code>.
 
 ```
 <img src="gatito.jpeg" title="Mi gatito">
 ```
 
-Cambiar el alto y el ancho de las imágenes. Insertamos los atributos **widht** y **height**
+Cambiar el alto y el ancho de las imágenes. Insertamos los atributos <code>widht</code> y <code>height</code>
 
 ```
 <img src="gatito.jpeg" title="Mi gatito" width="400px" height="300">
@@ -230,7 +230,7 @@ Cambiar el alto y el ancho de las imágenes. Insertamos los atributos **widht** 
 
 **Insertar audio en la misma carpeta**
 
-Para esta tarea ocupamos la etiqueta \<audio\> conjuntamente con el atributo src y el atributo controls que nos permitira manipular el archivo (pause, play)
+Para esta tarea ocupamos la etiqueta <code>\<audio\></code> conjuntamente con el atributo <code>src</code> y el atributo <code>controls</code> que nos permitirá manipular el archivo (pause, play)
 
 ```
 <audio src="mecano.mp3" controls></audio></br>
@@ -244,7 +244,7 @@ Para esta tarea ocupamos la etiqueta \<audio\> conjuntamente con el atributo src
 
 **Insertar audio en otra carpeta**
 
-Ya hemos hecho este ejemplo con páginas y texto, ahora lo haremos con audio pero que este contenido dos carpetas hacia adelante.
+Ya hemos hecho este ejemplo con páginas y texto, ahora lo haremos con un audio que este contenido dos carpetas hacia adelante.
 
 ```
 <audio src="imagenes/audio/do_it.mp3" controls></audio></br>
