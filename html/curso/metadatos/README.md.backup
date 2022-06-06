@@ -2,7 +2,7 @@
 
 # Metadatos
 
-Los metadatos son elementos HTML que muestran información sobre la página web. Y son usados por los buscadores para definir información principal del sitio web. Ejemplo son palabras clave, imagenes, temática y estos elementos \<meta\> se encuentran dentro del otro elemento \<head\>.
+Los metadatos son elementos HTML que muestran información sobre la página web. Y son usados por los buscadores para definir información principal del sitio web. Ejemplos de metadatos son, palabras clave, imágenes, temática y estos elementos <code><meta></code> se encuentran contenidos dentro del tro elemento <head\>.
 
 Ya empezamos a usar el un ejemplo del elemento \<meta\> que fue el caso de:
 
@@ -136,7 +136,7 @@ Ejemplo:
 <h3>La cultura</h3>
 <p>
   Hemos hablado de los pasos más importantes de la evolución biológica de los seres humanos. Sin embargo, hay que añadir que también nos distinguen de nuestros antepasados directos diferencias no biológicas a las que podemos llamar culturales, y que son típicamente humanas, como la fabricación de herramientas, el lenguaje simbólico, el saber que nos vamos a morir algún día, una organización social basada en la división del trabajo, el desarrollo de una capacidad moral y el establecimiento de relaciones afectivas más profundas y variadas.
-  </p>
+</p>
 ```
 
 
