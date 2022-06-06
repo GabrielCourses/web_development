@@ -2,7 +2,7 @@
 
 # Metadatos
 
-Los metadatos son elementos HTML que muestran información sobre la página web. Y son usados por los buscadores para definir información principal del sitio web. Ejemplos de metadatos son, palabras clave, imágenes, temática y estos elementos <code><meta></code> se encuentran contenidos dentro del tro elemento <head\>.
+Los metadatos son elementos HTML que muestran información sobre la página web. Y son usados por los buscadores para definir información principal del sitio web. Ejemplos de metadatos son, palabras clave, imágenes, temática y estos elementos <code><meta></code> se encuentran contenidos dentro del elemento <code><head></code>.
 
 Ya empezamos a usar el un ejemplo del elemento \<meta\> que fue el caso de:
 
