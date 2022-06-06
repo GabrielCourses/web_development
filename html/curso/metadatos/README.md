@@ -167,7 +167,7 @@ Crear un tercer párrafo ahora con <code>\<h3\></code>:
 - Etiqueta <code>\<blockquote\></code>. Citar texto.
 - Etiqueta <code>\<hr/\></code>. Insertar o dibujar línea separadora.
 - Etiqueta <code>\<em\>\</em\></code>. Tipo de texto _cursiva._
-- Etiqueta <code>\<i\>\</i\><code>. Tipo de texto _cursiva_
+- Etiqueta <code>\<i\>\</i\></code>. Tipo de texto _cursiva_
 - Insertar comentarios. <code>\<!--Esto es un comentario en html--\></code>
 
 # Contenido multimedia
