@@ -284,7 +284,7 @@ Iniciamos creando un archivo html con los elementos básicos:
 Guardamos como: controles_agrup.html
 
 
-Vamos a usar al elemento <code>\<fieldset\>\</fieldset></code> para insertar controles, los insertamos dentro de la etiqueta <code>form</form>. Guardamos y recargamos la página. Incluso usemos una segunda etiqueta <code>fieldset</code>.
+Vamos a usar al elemento <code>\<fieldset\>\</fieldset></code> para insertar controles, los insertamos dentro de la etiqueta <code>form</code>. Guardamos y recargamos la página. Incluso usemos una segunda etiqueta <code>fieldset</code>.
 
 Dentro de la primera etiqueta <code>fieldset</code> insertamos:
 
