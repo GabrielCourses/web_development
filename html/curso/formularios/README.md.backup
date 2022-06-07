@@ -70,7 +70,7 @@ Ingresa tu contraseña:
 <input type="password" name="pass" value="" size="20"><br><br>
 ```
 
-**type="checkbox"**
+El atributo <code>type="radio"</code>:
 
 ```
 Selecciona el curso de tu interés: <br>
@@ -80,7 +80,7 @@ Selecciona el curso de tu interés: <br>
 <input type="radio" name="data">Data Engineering<br>
 ```
 
-Guarda y recarga en el navegador, enseguida agregamos el atributo type="checkbox"
+Guarda y recarga en el navegador, enseguida agregamos el atributo <code>type="checkbox"</code>
 
 ```
 Selecciona el curso de tu interés: <br>
@@ -94,7 +94,7 @@ Guardamos y cerramos
 
 # Formularios. Parte II.  
 
-Creamos un archivo html con los elementos básicos includido la etiqueta form:
+Creamos un archivo html con los elementos básicos incluido la etiqueta <code>form</code>:
 
 ```
 <!DOCTYPE html>
@@ -117,17 +117,16 @@ Creamos un archivo html con los elementos básicos includido la etiqueta form:
 - Guardamos como: formulario2.html
 - Cargamos en el navegador.
 
-Comenzamos ingresando una caja de texto:
+Comenzamos ingresando una caja de texto, enseguida del elemento <code>form</code>:
 
 ```
-<!-- Dentro de la etiqueta form insertamos -->
 Ingresa tu nombre:
 <input type="text" name="nombre" size="30"><br>
 ```
 
-**El elemento select**
+**El elemento** <code>select</code>
 
-Una tarea común en los formularios es validar la información de entrada, es decir, restringir la entrada del campo a solo unas opciones. Lo anterior lo conseguimos en html con el elemento **select.**
+Una tarea común en los formularios es validar la información de entrada, es decir, restringir la entrada del campo a solo unas opciones. Lo anterior lo conseguimos en html con el elemento <coe>select<code>.
 
 ```
 Selecciona tu deporte favorito:
@@ -175,7 +174,8 @@ Vamos a crear un nuevo archivo con el siguiente código:
 		  <option value="8">Argentina</option>
 		  <option value="9">Colombia</option><br>
 		</optgroup>
-      </select><br>    
+      </select><br>
+          
       <input type="submit" value="Enviar">
     </form>
 
@@ -214,13 +214,13 @@ Creamos un archivo html con los elementos básicos que venimos haciendo:
 
 Guardamos el archivo como: multiple.html
 
-Hasta ahora hemos visto como elegir una opción dentro de una lista de opciones usando el elemento **select**, pero que ocurre si queremos elegir más de una opción.
+Hasta ahora hemos visto como elegir una opción dentro de una lista de opciones usando el elemento <code>select</code>, pero que ocurre si queremos elegir más de una opción.
 
-Dentro de la etiqueta body escribimos el siguiente código:
+Dentro de la etiqueta <code>body</code> escribimos el siguiente código:
 
 ```
     <form action="registrodedatos.php" method="post">
-      Seleccione o varios platillos(Oprima la tecla Ctrl para elegir más de una opción)<br>
+      Seleccione uno o varios platillos(Oprima la tecla Ctrl para elegir más de una opción)<br>
       <select name="platillo[]" size="6" multiple>
 		<option value="1">Pozole</option>
 		<option value="2">Birria</option>
@@ -229,9 +229,17 @@ Dentro de la etiqueta body escribimos el siguiente código:
 		<option value="5">Tostadas</option>
 		<option value="6">Chiles rellenos</option>
 		<option value="7">Pollo</option>
+		<option value="8">Enchiladas</option>
       </select><br>
 
       <input type="submit" value="Enviar">
     </form>
 ```
 
+En el caso del atributo <code>size</code> lo que eligo es cuanto elementos quiero mostrar en la interfaz.
+
+El atributo <code>multiple</code>es el que me permite escoger mas de una opción.
+
+En el caso del elemento <code>input</code> tiene dos atributos, el atributo <code>type="submit"</code> que nos permite enviar la información a un servidor y el atributo <code>value="Enviar"</code>, en el caso del valor del atributo, es decir, <code>"Enviar"</code> podemos cambiarlo y eso sera lo que se muestre en la página. Pero también puedo usar una imagen.
+
+Para ello 
