@@ -126,7 +126,7 @@ Ingresa tu nombre:
 
 **El elemento** <code>select</code>
 
-Una tarea común en los formularios es validar la información de entrada, es decir, restringir la entrada del campo a solo unas cuantas opciones. Lo anterior lo conseguimos en html con el elemento <coe>select<code>.
+Una tarea común en los formularios es validar la información de entrada, es decir, restringir la entrada del campo a solo unas cuantas opciones. Lo anterior lo conseguimos en html con el elemento <coe>select</code>.
 
 ```
 Selecciona tu deporte favorito:
