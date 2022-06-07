@@ -15,7 +15,7 @@ Los formulario son elementos de html que nos ayudan a acopiar información de lo
 **Nota:** Con html solo vamos a crear la interfaz del formulario, no se puede procesar la información, para ello necesitamos otro lenguaje el cual se ejecute dentro del servidor como por ejemplo **PHP.**
 ***
 
-Vamos crear un archivo con los elementos básicos y agregamos también una línea de código con el elemento <code>\<form\><code> con el cual ejecutamos el elemento formulario.
+Vamos crear un archivo con los elementos básicos y agregamos también una línea de código con el elemento <code>\<form\></code> con el cual ejecutamos el elemento formulario.
 
 ```
 <!DOCTYPE html>
@@ -43,7 +43,7 @@ Ahora puedes notar que el elemento <code>form</code>, cuenta con 2 atributos <co
 
 ## El elemento input
 
-Dentro de él elemento <code>form</code> empezamos llamando al elemento <code>\<input\><code> el cual nos va ayudar con los campos de entrada, es decir, debemos entender que el elemento <code>input</code> tiene atributos para colocar, cajas de texto, checkbox, ratios, etc.
+Dentro de él elemento <code>form</code> empezamos llamando al elemento <code>\<input\></code> el cual nos va ayudar con los campos de entrada, es decir, debemos entender que el elemento <code>input</code> tiene atributos para colocar, cajas de texto, checkbox, ratios, etc.
 
 Empezamos colocando un tipo de entrada del tipo <code>"text"</code>.
 
@@ -186,7 +186,7 @@ Vamos a crear un nuevo archivo con el siguiente código:
 
 Guardamos como: option.html
 
-En este caso basta con abrir el archivo en un navegador y darnos cuenta como con el elemento **optgroup** podemos agrupar la lista desplegable. 
+En este caso basta con abrir el archivo en un navegador y darnos cuenta como con el elemento <code>optgroup</code> podemos agrupar la lista desplegable. 
 
 # Formularios. Parte III.
 
