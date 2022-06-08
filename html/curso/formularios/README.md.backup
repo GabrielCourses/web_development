@@ -250,7 +250,7 @@ Es decir, vamos a sustituir la línea de código:
 <input type="submit" value="Enviar">
 ```
 
-por;
+por el siguiente bloque de código, pero **para que lo veas reflejado en tu navegador, primero tienes que descargar en la misma ubicación donde tienes el archivo multiple.html un par de imagenes: send.png y delete.png
 
 ```
 <button type="submit"><img src="send.png" alt="envio" width="100" height="40"></button><br><br>
