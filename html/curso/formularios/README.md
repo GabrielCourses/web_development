@@ -283,8 +283,12 @@ Iniciamos creando un archivo html con los elementos básicos:
 
 Guardamos como: controles_agrup.html
 
+Para empezar a agrupar controles usaremos la etiqueta <code>\<fieldset\>\</fieldset></code> la cual capturamos dentro de la etiqueta <code>form</code>:
 
-Vamos a usar al elemento <code>\<fieldset\>\</fieldset></code> para insertar controles, los insertamos dentro de la etiqueta <code>form</code>. Guardamos y recargamos la página. Incluso usemos una segunda etiqueta <code>fieldset</code>.
+```
+<fieldset></fieldset>
+<fieldset></fieldset>
+```
 
 Dentro de la primera etiqueta <code>fieldset</code> insertamos:
 
@@ -292,10 +296,10 @@ Dentro de la primera etiqueta <code>fieldset</code> insertamos:
 <legend>Datos personales</legend>
 ```
 
-Dentro de la segunda etiqueta <code>legend</code> escribimos:
+Dentro de la segunda etiqueta <code>fieldset</code> escribimos:
 
 ```
-<legend>Datos de conexíon</legend>
+<legend>Datos de conexión</legend>
 ```
 
 Guardamos y recargamos. Ahora dentro de la primera etiqueta <code>legend</code> escribimos:
@@ -309,3 +313,6 @@ Apellido materno:
 <input type="text" name="second_name" size="20"><br>
 ```
 
+Tu código y tu navegador deben tener un aspecto similar a la siguiente imagen:
+
+![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/html/image/fieldset.png)
