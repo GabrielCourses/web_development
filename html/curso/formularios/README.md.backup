@@ -130,12 +130,12 @@ Una tarea común en los formularios es validar la información de entrada, es de
 
 ```
 Selecciona tu deporte favorito:
-<select name="sport">
+   <select name="sport">
 	<option value="1">Beisbol</option>
 	<option value="2">Futbol soccer</option>
 	<option value="3">Baloncesto</option>
 	<option value="4">Voleibol</option>
-</select>
+   </select>
 ```
 
 **El atributo** <code>type="submit"</code>
@@ -167,22 +167,20 @@ Vamos a crear un nuevo archivo con el siguiente código:
     <form action="registrodedatos.php" method="post">
       Selecciona un país:
       <select name="paises">
-	    <optgroup label="Norteamerica">
-	      <option value="1">Estados Unidos</option>
-	      <option value="2">Canadá</option>
-	      <option value="3">México</option>
-		</optgroup>
+	<optgroup label="Norteamerica">
+	  <option value="1">Estados Unidos</option>
+	  <option value="2">Canadá</option>
+	  <option value="3">México</option>
+	</optgroup>
 
-		<optgroup label="Sudamerica">
-		  <option value="7">Brasil</option>
-		  <option value="8">Argentina</option>
-		  <option value="9">Colombia</option><br>
-		</optgroup>
-      </select><br>
-          
+	<optgroup label="Sudamerica">
+	  <option value="7">Brasil</option>
+	  <option value="8">Argentina</option>
+	  <option value="9">Colombia</option><br>
+	</optgroup>
+      </select><br>    
       <input type="submit" value="Enviar">
     </form>
-
   </body>
 
 </html>
