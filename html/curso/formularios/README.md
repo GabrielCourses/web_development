@@ -250,12 +250,22 @@ Es decir, vamos a sustituir la línea de código:
 <input type="submit" value="Enviar">
 ```
 
-por el siguiente bloque de código, pero **para que lo veas reflejado en tu navegador**, primero tienes que descargar en la misma ubicación donde tienes el archivo multiple.html un par de imagenes: send.png y delete.png
+Para sustituir el botón de tipo <code>"submit"</code> por imágenes vamos a descargar de la carpeta **ejercicios** en la misma ubicación donde tienes el archivo multiple.html un par de imagenes: send.png y delete.png
+
+Y en seguida de la etiqueta de cierre <code>select</code> escribimos:
 
 ```
 <button type="submit"><img src="send.png" alt="envio" width="100" height="40"></button><br><br>
 <button type="reset"><img src="delete.png" alt="borrar" width="100" height="40"></botton>
 ```
+
+Tu código tiene que tener un aspecto similar al siguiente:
+
+![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/html/image/code_botton.png)
+
+Y tu navegador debe ser similar a este:
+
+![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/html/image/browser_botton.png)
 
 Guardamos, cargamos y cerramos.
 
