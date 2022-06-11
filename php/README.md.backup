@@ -1,3 +1,21 @@
+![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/image/wordpress.png)
+
+# WordPress
+
+**WordPress** es un sistema de gestión de contenidos lanzado el 27 de mayo de 2003, enfocado a la creación de cualquier tipo de página web. Originalmente alcanzó una gran popularidad en la creación de blogs, para luego convertirse en una de las principales herramientas para la creación de páginas web comerciales.
+
+WordPress está desarrollado en el lenguaje PHP para entornos que ejecuten MySQl y Apache, bajo licencia GPL y es software libre. WordPress fue creado a partir del desaparecido b2/cafelog y se ha convertido en el CMS más popular de la blogsfera y en el más popular con respecto a cualquier otro CMS de uso general.
+
+Las causas de su enorme crecimiento son, entre otras, su licencia GPLv2, su facilidad de uso y sus características como gestor de contenidos.
+
+Aunque la mayor parte de la documentación existente se basa en la utilización del motor de base de datos MySQL sobre el servidor web Apache, este sistema de gestión de contenidos puede también instalarse en entornos que ejecuten PostgreSQL, MariaDB y Ngnix. Otro punto a considerar sobre su éxito y extensión es la enorme comunidad de desarrolladores y diseñadores, encargados de programarlo en su núcleo o creando complementos (llamados _plugins_) y plantillas (llamadas _temas_) para la comunidad. En marzo de 2019 era usado por el 33.4% de todos los sitios en internet y un 60.3% de todos los sitios basados en gestores de contenido (CMS).
+
+![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/image/wordpress.png)
+
+# XAMPP
+
+**XAMPP** es un paquete de software libre, que consiste principalmente en el sistema de gestión de base de datos MySQL, el servidor web Apache y los intérpretes para lenguajes de script PHP y Perl. El nombre es en realidad un acrónimo: **X** (para cualquiera de los diferentes sistemas operativos), **A**pache, **M**ariaDB/MySQL, **P**HP, **P**earl. A partir de la versión 5.6.15, XAMPP cambió la base de datos MySQL por MariaDB, un fork de MySQL con licencia GPL.
+
 ![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/image/php.png)
 
 # ¿Qué es PHP? ¿Cómo se usa PHP en WordPress?
@@ -17,6 +35,4 @@ Después, cuando su servidor haya procesado el código, entrega la salida de ese
 El resultado final es que, a diferencia del HTML, los visitantes de su sitio web nunca verán el código PHP que potencia su sitio WordPress. Solo verán el código ya procesado que su servidor entrega a su navegador.
 
 
-# XAMPP
-
-**XAMPP** es un paquete de software libre, que consiste principalmente en el sistema de gestión de base de datos MySQL, el servidor web Apache y los intérpretes para lenguajes de script PHP y Perl. El nombre es en realidad un acrónimo: **X** (para cualquiera de los diferentes sistemas operativos), **A**pache, **M**ariaDB/MySQL, **P**HP,
+ 
