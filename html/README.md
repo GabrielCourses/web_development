@@ -2,11 +2,11 @@
 
 # HTML
 
-HTML por sus siglas en inglés, significa Hypertext Markup Language. Es decir, un lenguaje de marcado, para elaborar páginas webs.
+HTML por sus siglas en inglés, significa Hypertext Markup Language. Es decir, un lenguaje de marcado para elaborar páginas webs.
 
 Para comenzar a explorar esta lenguaje de etiquetado (aclarar que no es un lenguaje de programación) vamos iniciar creando un fichero en un editor de texto plano llamado: ejercicio1.html 
 
-En mi caso, estoy usando Vim, pero puedes usar otro como el que trae Windows por defecto que es Bloc de Notas, o, NotePad++, SublimeText, u otros. Los archivos los puedes consultar en la carpeta <a href="https://github.com/GabrielCourses/web_development/tree/main/html/ejemplo" target="_PLANK">ejemplo.</a>
+En mi caso, estoy usando Vim, pero puedes usar otro como el que trae Windows por defecto que es el Bloc de Notas, o, NotePad++, SublimeText, u otros. Los archivos los puedes consultar en la carpeta <a href="https://github.com/GabrielCourses/web_development/tree/main/html/ejemplo" target="_PLANK">ejemplo.</a>
 
 ### ¿Pero qué es una etiqueta en HTML?
 
@@ -82,7 +82,7 @@ Ahora, si solo quiero quiero que el primer título de nuestra página sea azul, 
 
 ![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/html/image/h1.png)
 
-Y si queremos pintar a <code>h2</code> de rojo y a <code>h3</code> de naranja, editamos nuestro archivo estilo.css
+Y si queremos pintar a <code>h2</code> de rojo y a <code>h3</code> de naranja, editamos nuestro archivo: estilo.css
 
 ```
 h1 {
@@ -100,7 +100,7 @@ h3 {
 
 ![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/html/image/colors.png)
 
-Recapitulando HTML nos ayuda a darle estructura a la página, en otras palabras serían las cajas como, texto, imagenes, videos, links. Con CSS podemos darle un estilo propio, es decir, la apariencia. Finalmente con JavaScript vamos a darle la funcionalidad, es decir, crear un método para un botón, crear un formulario, etc.
+Recapitulando HTML nos ayuda a darle estructura a la página, en otras palabras serían las cajas como, texto, imágenes, videos, links. Con CSS podemos darle un estilo propio, es decir, la apariencia. Finalmente con JavaScript vamos a darle la funcionalidad, es decir, crear un método para un botón, crear un formulario, etc.
 
 # CSS
 
@@ -108,4 +108,4 @@ CSS, en español 'Hojas de estilo en cascada', es un lenguaje de diseño gráfic
 
 # JavaScript
 
-JavaScript es un lenguaje de programación, con el cual vamos a darle la funcionalidad a nuestra página web.
+JavaScript es un lenguaje de programación, con el cual vamos a darle funcionalidad a nuestra página web.
