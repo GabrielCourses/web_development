@@ -10,7 +10,7 @@ Las causas de su enorme crecimiento son, entre otras, su licencia GPLv2, su faci
 
 Aunque la mayor parte de la documentación existente se basa en la utilización del motor de base de datos MySQL sobre el servidor web Apache, este sistema de gestión de contenidos puede también instalarse en entornos que ejecuten PostgreSQL, MariaDB y Ngnix. Otro punto a considerar sobre su éxito y extensión es la enorme comunidad de desarrolladores y diseñadores, encargados de programarlo en su núcleo o creando complementos (llamados _plugins_) y plantillas (llamadas _temas_) para la comunidad. En marzo de 2019 era usado por el 33.4% de todos los sitios en internet y un 60.3% de todos los sitios basados en gestores de contenido (CMS).
 
-![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/image/wordpress.png)
+![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/image/xampp.png)
 
 # XAMPP
 
