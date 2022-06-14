@@ -4,7 +4,7 @@
 
 Los metadatos son elementos HTML que muestran información sobre la página web. Y son usados por los buscadores para definir información principal del sitio web. Ejemplos de metadatos son, palabras clave, imágenes, temática y estos elementos <code>\<meta\></code> se encuentran contenidos dentro del elemento <code>\<head\></code>.
 
-Ya empezamos a usar un ejemplo del elemento <code>\<meta\></code> que fue el caso de:
+Ya hemos usado al elemento <code>\<meta\></code> que fue el caso de:
 
 ```
 <meta charset="UTF-8">
@@ -12,7 +12,7 @@ Ya empezamos a usar un ejemplo del elemento <code>\<meta\></code> que fue el cas
 
 El cual nos sirve para usar la codificación UTF-8, en particular lo usamos para usar acentos. Aunque existen varias etiquetas del tipo <code>\<meta\></code> las cuales ayudan a clasificarlas según su contenido.
 
-Pensemos que estos elementos sirven para que los motores de búsqueda (Google, Bing, Yahoo!, etc), le será más fácil encontrar una página y colocarla con cierta preferencia.
+Pensemos que estos elementos sirven para que los motores de búsqueda (Google, Bing, Yahoo!, etc), les sea más fácil encontrar una página y colocarla con cierta preferencia.
 
 Los ejemplos que veremos en esta sección están en el directorio **examples,** de esta misma carpeta.
 
@@ -35,7 +35,7 @@ Empecemos copiando el siguiente código en un editor de texto plano:
 ```
 
 Guardamos como: indice.html
-y la abrimos en el navegador para verificar que todo funcione bien.
+y lo abrimos en el browser para verificar que funcione.
 
 ### Atributo name y content
 
@@ -51,13 +51,15 @@ Ahora escribimos en seguida de la línea meta:
 
 Con esta metaetiqueta se controla cómo deben rastrear e indexar el contenido los buscadores.
 
-**Usar la etiqueta meta robots**
+**Usar la etiqueta \<meta name="robots"\>**
 
 ```
 <meta name="robots" content="noindex">
 ```
 
-En este ejemplo, la etiqueta meta "robots" indica a los buscadores que no muestren esa página en los resultados de búsqueda. Como el atributo <code>name</code> tiene el valor <code>robots</code>, la directiva se aplica a todos los rastreadores.
+En este ejemplo, la etiqueta <code>meta name="robots"</code> indica a los buscadores que no muestren esa página en los resultados de búsqueda. Como el atributo <code>name</code> tiene el valor <code>robots</code>, la directiva se aplica a todos los rastreadores.
+
+Guardamos y cerramos el archivo.
 
 # Listas
 
@@ -112,6 +114,8 @@ Podemos capturar listas dentro de las listas, es decir, listas anidadas:
    </ul> 		
 ```
 
+Guardamos y cerramos el archivo.
+
 # Etiquetas para la creación de texto
 
 Creamos un nuevo archivo con los elementos básicos:
@@ -163,12 +167,12 @@ Crear un tercer párrafo ahora con <code>\<h3\></code>:
 ```
 
 
-- Etiqueta <code>\<s\></code>. Tachar texto.
-- Etiqueta <code>\<blockquote\></code>. Citar texto.
+- Etiqueta <code>\<s\>\</s\></code>. Tachar texto.
+- Etiqueta <code>\<blockquote\>\</blockquote\></code>. Citar texto.
 - Etiqueta <code>\<hr/\></code>. Insertar o dibujar línea separadora.
 - Etiqueta <code>\<em\>\</em\></code>. Tipo de texto _cursiva._
 - Etiqueta <code>\<i\>\</i\></code>. Tipo de texto _cursiva_
-- Insertar comentarios. <code>\<!--Esto es un comentario en html--\></code>
+- <code>\<!--Esto es un comentario en html--\></code>. Insertar comentarios.
 
 # Contenido multimedia
 
@@ -192,7 +196,7 @@ Volvemos a crear un archivo con los elementos básicos:
 
 Guardamos como: gatitos.html
 
-**Insertar imagen ubicada en la misma carpeta**
+**Insertar una imagen ubicada en la misma carpeta**
 
 Con el elemento o etiqueta <code>\<img\></code> insertamos imágenes conjuntamente con el atributo <code>src</code>. Veamos el siguiente ejemplo:
 

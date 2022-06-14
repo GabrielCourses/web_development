@@ -2,7 +2,7 @@
 
 # Formularios. Parte I.
 
-Los formulario son elementos de html que nos ayudan a acopiar información de los usuarios, como datos personales, encuestas de satisfacción, compras en línea, etc. Dicha información va ser enviada a algún servidor.
+Los formulario son elementos html que nos ayudan a acopiar información de los usuarios, como datos personales, encuestas de satisfacción, compras en línea, etc. Dicha información va ser enviada a algún servidor.
 
 ¿Que atributos tiene un formulario?
 
@@ -114,8 +114,7 @@ Creamos un archivo html con los elementos básicos incluido la etiqueta <code>fo
 </html>
 ```
 
-- Guardamos como: formulario2.html
-- Cargamos en el navegador.
+Guardamos como: formulario2.html, y cargamos en el navegador.
 
 Comenzamos ingresando una caja de texto, en seguida del elemento <code>form</code>:
 
@@ -126,7 +125,7 @@ Ingresa tu nombre:
 
 **El elemento** <code>select</code>
 
-Una tarea común en los formularios es validar la información de entrada, es decir, restringir la entrada del campo a solo unas cuantas opciones. Lo anterior lo conseguimos en html con el elemento <coe>select</code>.
+Una tarea común en los formularios es validar la información de entrada, es decir, restringir la entrada del campo a solo unas cuantas opciones. Lo anterior lo conseguimos en html con el elemento <code>select</code> y la etiqueta <code>option</code>.
 
 ```
 Selecciona tu deporte favorito:
@@ -221,24 +220,24 @@ Hasta ahora hemos visto como elegir una opción dentro de una lista de opciones 
 Dentro de la etiqueta <code>body</code>, en seguida del elemento <code>form</code> escribimos el siguiente código:
 
 ```
-      Seleccione uno o varios platillos(Oprima la tecla Ctrl para elegir más de una opción):<br>
-      <select name="platillo[]" size="6" multiple>
-		<option value="1">Pozole</option>
-		<option value="2">Birria</option>
-		<option value="3">Tacos</option>
-		<option value="4">Barbacoa</option>
-		<option value="5">Tostadas</option>
-		<option value="6">Chiles rellenos</option>
-		<option value="7">Pollo</option>
-		<option value="8">Enchiladas</option>
-      </select><br>
+Seleccione uno o varios platillos(Oprima la tecla Ctrl para elegir más de una opción):<br>
+<select name="platillo[]" size="4" multiple>
+    <option value="1">Pozole</option>
+	<option value="2">Birria</option>
+	<option value="3">Tacos</option>
+	<option value="4">Barbacoa</option>
+	<option value="5">Tostadas</option>
+	<option value="6">Chiles rellenos</option>
+	<option value="7">Pollo</option>
+	<option value="8">Enchiladas</option>
+</select><br>
 
-      <input type="submit" value="Enviar">
+<input type="submit" value="Enviar">
 ```
 
 En el caso del atributo <code>size</code> lo que elijo es cuantos elementos quiero mostrar en la interfaz.
 
-El atributo <code>multiple</code>es el que me permite escoger mas de una opción.
+El atributo <code>multiple</code> es el que me permite escoger mas de una opción.
 
 En el caso del elemento <code>input</code> tiene dos atributos, el atributo <code>type="submit"</code> que nos permite enviar la información a un servidor y el atributo <code>value="Enviar"</code>, en el caso de <code>"Enviar"</code> podemos cambiarlo y eso sera lo que se muestre en la página. Pero también puedo usar una imagen.
 
@@ -250,7 +249,7 @@ Es decir, vamos a sustituir la línea de código:
 
 Para sustituir el botón de tipo <code>"submit"</code> por imágenes vamos a descargar de la carpeta **ejercicios** en la misma ubicación donde tienes el archivo multiple.html un par de imagenes: send.png y delete.png
 
-Y en seguida de la etiqueta de cierre <code>select</code> escribimos:
+Y en seguida de la etiqueta de cierre <code>\</select\></code> escribimos:
 
 ```
 <button type="submit"><img src="send.png" alt="envio" width="100" height="40"></button><br><br>
@@ -291,7 +290,7 @@ Iniciamos creando un archivo html con los elementos básicos:
 
 Guardamos como: controles_agrup.html
 
-Para empezar a agrupar controles usaremos la etiqueta <code>\<fieldset\>\</fieldset></code> la cual capturamos dentro de la etiqueta <code>form</code>:
+Para empezar a agrupar controles usaremos la etiqueta <code>\<fieldset\>\</fieldset></code> capturamos un par de etiquetas dentro de la etiqueta <code>form</code>:
 
 ```
 <fieldset></fieldset>
@@ -318,9 +317,40 @@ Nombre(s):
 Apellido paterno:
 <input type="text" name="last_name" size="20">
 Apellido materno:
-<input type="text" name="second_name" size="20"><br>
+<input type="text" name="second_name" size="20"><br><br>
+Fecha de nacimiento:
+<input type="text" name="born_date" size="20"><br>
 ```
 
 Tu código y tu navegador deben tener un aspecto similar a la siguiente imagen:
 
 ![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/html/image/fieldset.png)
+
+Como lo notas, el primer control o <code>fieldset</code> ya tiene cierto formato, vamos ahora a introducir etiquetas dentro del segundo elemento <code>fieldset</code>
+
+```
+Usuario:
+<input type="text" name="name" size="20"><br><br>
+Ingrese contraseña:
+<input type="password" name="clave1" size="20"><br><br>
+Confirme contraseña:
+<input type="password" name="clave2" size="20"><br>
+```
+
+**Atributo** <code>size</code> Vs <code>maxlength</code>
+
+En nuestras etiquetas <code>input</code> hemos usado el atributo <code>size</code> el cual limita el **número máximos de caracteres mostrados** dentro de la caja de texto, aunque hay una sutilidad al usar el atributo <code>maxlength</code> ya que este limita el número **total de caracteres permitidos** en la caja de texto. Así que agregamos este atributo en los casos donde sea necesario, como ejemplo:
+
+```
+Ingrese contraseña:
+<input type="password" name="clave1" size="20" maxlength="12">
+```
+
+**Elemento** <code>label</code>
+
+Para los controles que capturamos en nuestra página, en el caso de insertar te texto para solicitar que se llene un campo. También podemos usar la etiqueta <code>label</code> que tendría la siguiente forma:
+
+```
+<label for="nombre">Nombre(s)</label>
+<input type="text" name="name" size="20" maxlength="50"><br><br>
+```

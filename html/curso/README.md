@@ -70,7 +70,7 @@ Y también hacemos lo mismos con el nuestro archivo: new_page.html
 <a href="index.html">Página indice</a>
 ```
 
-En el archivo new_page.htlm seguido de nuestro enlace. Colocamos un párrafo que diga 
+En el archivo new_page.html seguido de nuestro enlace. Colocamos un párrafo que diga 
 
 ```
     <p>
@@ -92,7 +92,7 @@ Abrimos el archivo index.html y en la línea con la etiqueta <code>\<a href=" "\
 <a href="directorio2/other_page.html">Otra página</a>
 ```
 
-De index.html puedo llegar a other_page.html. ¿Ahora como hago para de other\_page.html enlazar con index.html. Tengo que modificar la etiqueta <code>\<a href=""\></code> de la siguiente manera:
+De index.html puedo llegar a other_page.html. ¿Ahora como hago para de other\_page.html enlazar con index.html. Tengo que modificar la etiqueta <code>\<a href=" "\></code> de la siguiente manera:
 
 ```
 <a href="../index.html">Página indice</a>
