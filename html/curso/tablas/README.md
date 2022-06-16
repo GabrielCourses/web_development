@@ -60,3 +60,31 @@ Abrimos el archivo en el navegador.
 
 En el caso de la etiqueta <code>table</code> vamos a cambiar el atributo <code>border="5"</code>. Guardamos y recargamos en el browser.
 
+Como puedes darte cuenta los elementos <code>tr</code> son las filas y dentro de ellos están los elementos <code>td</code> que corresponden a los valores de los campos.
+
+Si quiero que la tabla este alineada al centro de la página, agrego el atributo <code>align</code> de la siguiente manera:
+
+```
+<table border="5" align="center">
+```
+
+De la misma manera, puedo elegir <code>right</code> o <code>left</code>. También como ya hemos usado anteriormente puedo cambiar el ancho de la tabla con el atributo <code>width</code>, como ejemplo agreguemos:
+
+```
+<table border="5" align="center" width="50%">
+```
+
+Donde <code>50%</code> se refiere al 50% del ancho de la pantalla.
+
+Ahora, si quisiera alinear el contenido de la celda puedo usar el atributo <code>align</code>, como ejemplo, alineamos al centro las cabeceras, es decir, el nombre de los campos.
+
+```
+<tr>
+<td align="center">Número de control</td>
+<td align="center">Nombre</td>
+<td align="center">Edad</td>
+<td align="center">Teléfono</td>
+</tr>
+```
+
+Guardamos y recargamos el navegador.
