@@ -107,7 +107,7 @@ Abrimos nuestra archivo index.html. Vamos insertar un enlace al video de YouTube
 Después del primer vinculo escribimos:
 
 ```
-<a href="https://www.youtube.com/watch?v=oY-rbawd3oQ&t=24s">Tarea 1 </a>
+<a href="https://www.youtube.com/watch?v=oY-rbawd3oQ&t=24s">Tarea 1</a>
 ``` 
 
 Notas que el par de vínculos están en una misma línea en el navegador, para corregirlo ponemos un salto de línea <code>\<br\></code> después del primer enlace.
