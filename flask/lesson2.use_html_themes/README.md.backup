@@ -1,0 +1,46 @@
+![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/image/lesson2.png)
+
+# Lección 2: Uso de plantillas para las páginas HTML
+
+Vamos aprender el **uso de plantillas para la generación de contenido HTML dinámico**. Pero antes de esto es necesario que conozcas cómo Flask asocia una URL a un determinado script o cómo envía una respuesta al navegador.
+
+En la primera lección vimo como instalar Flask y hacerlo funcionar usando el servidor que viene con el propio framework. En este tutorial vamos a continuar con nuestro proyecto por donde lo dejamos. **Recuerda que el próposito es desarrollar un miniblog.**
+
+Los objetivos de esta lección son los siguientes:
+
+- Crear la página home de nuestro blog. En ella se listará todos los post de más reciente a más antiguo.
+- Crear la página para visualizar un post. Se accederá a ella al hacer clic sobre el título de un post desde la página home.
+- Diseñar una página desde la que crea o editar un post.
+
+Dado que nos encontramos al inicio del tutorial sobre Flask, nuestro código no se integrará con ninguna base de datos ni crearemos los correspondientes formularios. El objetivo es ver cómo Flask maneja las peticiones del usuario y las plantillas HTML para generar contenido dinámico. En lugar de usar una base de datos, simularemos el listado de posts con una lista en memoria.
+
+## Índice
+
+- Routing
+- Respuestas
+- Renderizando una página HTML
+- Plantillas
+- Ficheros estáticos
+- Creando nuestra plantilla para el miniblog
+
+## Routing
+
+En la lección 1 vimos de manera muy rápida cómo Flask asocia una URL con un método de nuestro código. Para ello, simplemente tenemos que añadir el docorador <code>route()</code> a la función que queramos ejecutar cuando se hace una petición a una determinada URL. En Flask, por convención, a las funciones que están asociadas a una URL se les llama «vistas».
+
+### Creando la vista de la página home
+
+Vamos a ello con nuestra página principal. La URL de esta página será <code>"/"</code> y, como te indiqué anteriormente, en ella se mostrará el listado de posts de nuestro blog. De momento, los posts se almacenarán en una lista en memoria.
+
+Abrimos el fichero <code>run.py</code> que creamos en la lección anterior, borramos la función <code>hello_world</code> y añadimos el código a continuación:
+
+```
+post = []
+
+@app.route("/")
+def index():
+    return "{} post".format(len(post))
+```
+
+¿Qué esta ocurriendo aquí? Primero hemos creado una variable llamada <code>posts</code>. Esta variable es una lista que almacenará los posts que vayamos creando. En segundo lugar hemos creado la función </code>index()</code>, que es la responsable de mostrar los posts de nuestro blog. Pero en esta primera aproximación lo único que hace es mostrar en el navegador el número de posts que contiene la variable <code>post</code>. Además, a la función se le ha añadido el decorador <code>route</code> junto con el paramentro <code>"/"</code>. Esto hará que cuando se acceda a la página principal, se ejecute la función <code>index()</code>.
+
+Técnicamente **esto es lo fundamental que debes saber sobre cómo Flask asocia una URL a una función de nuestra aplicación.**
