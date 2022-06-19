@@ -53,7 +53,7 @@ Para hacer esto, **a una URL le podemos añadir secciones variables o parametriz
 
 Por defecto, en Flask existen los siguientes conversores:
 
-- **string**: Es el conversor por defecto. Acepta cualquier cadena que no contenga el carácter <code>'/'<code>.
+- **string**: Es el conversor por defecto. Acepta cualquier cadena que no contenga el carácter <code>'/'</code>.
 - **int**: Acepta números enteros positivos.
 - **path**: Es como string pero acepta cadenas con el carácter <code>'/'</code>.
 - **uuid**: Acepta cadenas con formato UUID.
@@ -132,4 +132,88 @@ Flask buscará las plantillas en el directorio <code>templetes</code> de nuestro
 Es hora de crear este directorio y añadir las páginas <code>index.html</code>, <code>post_view.html</code> y <code>admin/post_form.html</code>. La estructura de nuestro proyecto quedaría del siguiente modo:
 
 ![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/image/directories.png)
+
+Ahora modifiquemos el cuerpo de las vistas <code>index()</code>, <code>show_post()</code> y <code>post\_form()</code> para que muestren el resultado de renderizar las respectivas plantillas. Pero antes recuerda importar el método <code>render\_templates</code> del módelo flask: <code>from flask import render\_templetes</code>:
+
+```
+@app.route("/")
+def index():
+    return render_template("index.html", num_posts=len(posts))
+
+
+@app.route("/p/<string:slug>/")
+def show_post(slug):
+    return render_template("post_view.html", slug_title=slug)
+
+
+@app.route("/admin/post/")
+@app.route("/admin/post/<int:post_id>/")
+def post_form(post_id=None):
+    return render_template("admin/post_form.html", post_id=post_id)
+```
+
+## Plantillas
+
+Ya que hemos aprendido cómo renderizar una plantilla y dónde debe estar ubicada, tan solo nos falta modificar las plantillas que acabamos de crear para que muestren el mismo resultado que en la sección primera.
+
+### index.html
+
+```
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tutorial Flask: Miniblog</title>
+</head>
+<body>
+  {{ num_posts }} posts
+</body>
+</html>
+```
+
+### post_view.html
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ slug_title }}</title>
+</head>
+<body>
+  Mostrando el post {{ slug_title }}
+</body>
+</html>
+```
+
+### post_form.html
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>
+    {% if post_id %}
+      Modificando el post {{ post_id }}
+    {% else %}
+      Nuevo post
+    {% endif %}
+  </title>
+</head>
+<body>
+{% if post_id %}
+  Modificando el post {{ post_id }}
+{% else %}
+  Nuevo post
+{% endif %}
+</body>
+</html>
+```
+
+Como podemos ver, el aspecto de estas páginas es similar a una página html estática con la excepción de <code>{{ num\_post}}</code> y <code>{{ slug\_title}}</code> y los caracteres <code>{%</code> y <code>%}</code>. Dentro de las llaves se usan los parámetros que se pasaron al método <code>render_template()</code>. El resultado de ello es que durante el renderizado se sustituirán las llaves por el valor de los parámetros. De este modo podemos generar contenido dinámico en nuestras páginas.
+
+En definitiva, una plantilla Jinja2 no es más que un fichero que contiene datos estáticos junto con bloques pra generar contenido dinámico. El resultado de renderizar una plantilla es un documento html en el que los bloques de generación de contenido dinámico han sido procesados.
+
+
 
