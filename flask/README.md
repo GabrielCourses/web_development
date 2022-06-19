@@ -33,8 +33,8 @@ Estos son los requisitos que tomaremos de inicio. A lo largo del tutorial se ir�
 
 ## Indice del tutorial flask: desarrollando un mini blog.
 
-- <a href="https://github.com/GabrielCourses/web_development/tree/main/flask/lesson1.first_app">Lección 1: La primera aplicación Flask</a>
-- Lección 2: Uso de plantillas para la páginas HTML
+- <a href="https://github.com/GabrielCourses/web_development/tree/main/flask/lesson1.fisrt_app">Lección 1: La primera aplicación Flask</a>
+- <a href="https://github.com/GabrielCourses/web_development/tree/main/flask/lesson2.use_html_themes">Lección 2: Uso de plantillas para la páginas HTML</a>
 - Lección 3: Uso de formularios en Flask
 - Lección 4: Login de usuarios en Flask
 - Lección 5: Añadiendo una base de datos: SQLAlchemy
