@@ -95,7 +95,7 @@ Pongamos todo en orden.
 
 Para declarar la variable <code>FLASK_APP</code> debemos modificar el fichero <code>activate</code> de nuestro entorno Python.
 
-En Linux/Mac se encuentra en <code>env/bin/activate. Al final del fichero añadimos lo siguiente:
+En Linux/Mac se encuentra en <code>env/bin/activate</code>. Al final del fichero añadimos lo siguiente:
 
 ```
 export FLASK_APP="run.py"
