@@ -58,3 +58,43 @@ Otra de las formas habituales que existen para incluir estilos CSS en nuestra p�
 
 ![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/image/style.png)
 
+Este sistema puede servirnos en ciertos casos particulares, pero hay que darle prioridad al método anterior (_CSS externo_), ya que incluyendo el código CSS en el interior del archivo HTML arruinamos la posibilidad de tener el código CSS en un documento a parte, pudiendo **reutilizarlo y enlazarlo** desde otros documentos HTML mediante la etiqueta <code>\<link\></code>.
+
+***
+Aunque no es obligatorio, es muy común que las etiquetas <code>\<style\></code> se encuentren en la cabecera <code>\<head\></code> del documento HTML, ya que antiguamente era la única forma de hacerlo.
+***
+
+### Estilos en línea (atributo style)
+
+Por útlimo, la tercera forma de aplicar estilos en un documento HTML, es hacerlo directamente, a través del atributo <code>style</code> de la propia etiqueta donde queramos aplicar el estilo, colocando ahí las propiedades CSS:
+
+![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/image/atrib_style.png)
+
+De la misma forma que en el método anterior, con la etiqueta <code>\<style\></code>, se recomienda no utilizar este método salvo en casos muy específicos y justificados, ya que los estilos se asocian a la etiqueta HTML , en cuestión y no pueden reutilizarse.
+
+Es una opción que puede venir bien en ciertos casos, pero se considera una mala práctica por muchos diseñadores cuando la sobreutilizas (_sin una razón de peso_) pudiendo utilizar el primer método.
+
+***
+**Consejo:** Si quieres comenzar a hacer pruebas rápidas con HTML, CSS y Javascript puedes utilizar <a href="https://codepen.io/pen">CodePen</a>, una plataforma web que te permite crear contenido HTML, CSS y Javascript, previsualizando el resultado del documento final.
+***
+
+## Contenido
+
+1. Introducción a CSS
+	+ Estructura de CSS
+	+ Minificar CSS
+	+ Navegador web
+	+ Niveles de CSS y prefijos
+	+ Herencia en CSS
+	+ Cascada en CSS
+	+ Variable CSS
+	+ La guia de propiedades CSS
+2. Modelo de cajas
+	+ Unidades CSS
+	+ Modelo de cajas
+	+ Márgenes y rellenos
+	+ Bordes CSS
+	+ Esquinas redondeadas
+	+ Propiedades lógicas CSS
+	+ Bordes con imágenes
+	+ Fu
