@@ -1,4 +1,4 @@
-![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/image/header_html5.png)
+![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/image/header_html5.jpeg)
 
 # Introducción a HTML5
 
@@ -24,4 +24,4 @@ En **HTML** no se puede utilizar cualquier palabra como etiqueta. En su lugar, e
 
 ## ¿Qué es la semántica?
 
-Uno de los principales objetivos de HTML5 es introducir información en un documento HTML5 de forma que sea semántico y no visual. Con esto queremos decir que todos los aspectos visuales deben dejarse para el apartado de presentación que se gestiona desde un lenguaje CSS.
+Uno de los principales objetivos de HTML5 es introducir información en un documento HTML5 de forma que sea semántico y no visual. Con esto queremos decir que todos los aspectos visuales deben dejarse para el apartado de presentación que se gestiona desde un <a href="https://github.com/GabrielCourses/web_development/tree/main/css">lenguaje CSS</a>.
