@@ -25,7 +25,7 @@ Dado que nos encontramos al inicio del tutorial sobre Flask, nuestro código no 
 
 ## Routing
 
-En la lección 1 vimos de manera muy rápida cómo Flask asocia una URL con un método de nuestro código. Para ello, simplemente tenemos que añadir el docorador <code>route()</code> a la función que queramos ejecutar cuando se hace una petición a una determinada URL. En Flask, por convención, a las funciones que están asociadas a una URL se les llama «vistas».
+En la lección 1 vimos de manera muy rápida cómo Flask asocia una URL con un método de nuestro código. Para ello, simplemente tenemos que añadir el decorador <code>route()</code> a la función que queramos ejecutar cuando se hace una petición a una determinada URL. En Flask, por convención, a las funciones que están asociadas a una URL se les llama «vistas».
 
 ### Creando la vista de la página home
 
@@ -41,7 +41,7 @@ def index():
     return "{} post".format(len(post))
 ```
 
-¿Qué esta ocurriendo aquí? Primero hemos creado una variable llamada <code>posts</code>. Esta variable es una lista que almacenará los posts que vayamos creando. En segundo lugar hemos creado la función </code>index()</code>, que es la responsable de mostrar los posts de nuestro blog. Pero en esta primera aproximación lo único que hace es mostrar en el navegador el número de posts que contiene la variable <code>post</code>. Además, a la función se le ha añadido el decorador <code>route</code> junto con el paramentro <code>"/"</code>. Esto hará que cuando se acceda a la página principal, se ejecute la función <code>index()</code>.
+¿Qué esta ocurriendo aquí? Primero hemos creado una variable llamada <code>posts</code>. Esta variable es una lista que almacenará los posts que vayamos creando. En segundo lugar hemos creado la función <code>index()</code>, que es la responsable de mostrar los posts de nuestro blog. Pero en esta primera aproximación lo único que hace es mostrar en el navegador el número de posts que contiene la variable <code>post</code>. Además, a la función se le ha añadido el decorador <code>route</code> junto con el paramentro <code>"/"</code>. Esto hará que cuando se acceda a la página principal, se ejecute la función <code>index()</code>.
 
 Técnicamente **esto es lo fundamental que debes saber sobre cómo Flask asocia una URL a una función de nuestra aplicación.** Aunque apenas estamos iniciando.
 
@@ -213,7 +213,29 @@ Ya que hemos aprendido cómo renderizar una plantilla y dónde debe estar ubicad
 
 Como podemos ver, el aspecto de estas páginas es similar a una página html estática con la excepción de <code>{{ num\_post}}</code> y <code>{{ slug\_title}}</code> y los caracteres <code>{%</code> y <code>%}</code>. Dentro de las llaves se usan los parámetros que se pasaron al método <code>render_template()</code>. El resultado de ello es que durante el renderizado se sustituirán las llaves por el valor de los parámetros. De este modo podemos generar contenido dinámico en nuestras páginas.
 
-En definitiva, una plantilla Jinja2 no es más que un fichero que contiene datos estáticos junto con bloques pra generar contenido dinámico. El resultado de renderizar una plantilla es un documento html en el que los bloques de generación de contenido dinámico han sido procesados.
+En definitiva, una plantilla Jinja2 no es más que un fichero que contiene datos estáticos junto con bloques para generar contenido dinámico. El resultado de renderizar una plantilla es un documento html en el que los bloques de generación de contenido dinámico han sido procesados.
 
+Jinja2 está basado en Python, así que casi todo lo que conoces de este lenguaje es aplicable al lenguaje utilizado en Jinja2. Lo único que tienes que tener en cuenta a la hora de crear una plantilla es lo siguiente:
 
+- Cualquier expresión contenida entre llaves dobles se mostrará como salida al renderizar la página.
+- Es posible usar estructuras de control, como sentencias if o bucles for, entre los caracteres <code>{%</code> y <code>%}</code>.
+
+***
+Por defecto, Jinja2 escapará cualquier carácter específico de HTML al renderizar una plantilla para que el renderizado sea seguro. Esto quiere decir que si el valor de una variable que le pasemos a la plantilla es, por ejemplo, </code>\<p\>hola j2logo\</p\></code>, se sustiturán los corchetes por los correspondientes códigos <code>\&gt;</code> y <code>\&lt;</code>. Esto es así para evitar inyecciones de código que rompan nuestra página. No obstante, este comportamiento se puede cambiar (se verá en otro post).
+
+También es bueno mencionar que Flask pone a disposición de las plantillas la función <code>url\_for()</code> que vimos anteriormente. También las siguientes variables globales: <code>config</code>, <code>request</code>, <code>session</code> y <code>g</code>. Todavía es pronto para conocer el significado de las mismas pero tenerlas en cuenta para las futuras lecciones.
+
+## Ficheros estáticos
+
+Además de las plantillas que generan contenido dinámico, una página web también se compone de ficheros CSS para definir estilos, imágenes y código Javascript. Todo este tipo de ficheros se conocen como recursos estáticos, ya que su contenido no cambia a lo largo del ciclo de ejecución de una aplicación web.
+
+Normalmente, en un entorno real, estos ficheros deben ser servidos por un servidor web como puede ser Apache o Nginx y no por un servidor de aplicaciones, como es el caso de gunicorn o el servidor o el servidor que viene con el propio Flask. Por ahora no te preocupes, esto lo veremos en la lección de despliegue de nuestra aplicación. Esto evita que nos tengamos que preocupar de configuraciones que no son objeto de la fase en la que nos encontramos.
+
+Para que nuestro código CSS o Javascript sea servido, debemos ubicar estos ficheros en un directorio llamado <code>static</code> situado al mismo nivel que el directorio <code>templates</code>. Este directorio estará accesible en la URL <code>/static</code>.
+
+Vamos a crear un fichero llamado <code>base.css</code> dentro del directorio <code>static</code> en el que definimos el estilo de nuestro blog.
+
+Ahora los directorios de nuestro proyecto lucen asi:
+
+![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/image/directories2.png) 
 
