@@ -237,7 +237,129 @@ Vamos a crear un fichero llamado <code>base.css</code> dentro del directorio <co
 
 Ahora los directorios de nuestro proyecto lucen asi:
 
- 
+![](https://raw.githubusercontent.com/GabrielCourses/web_development/main/image/directories2.png) 
 
+Editamos el fichero <code>base.css</code> añadiendo los siguientes estilos:
 
+```
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  line-height: 1.5
+}
 
+h1, h2, h3, h4 {
+  margin: 1em 0 .5em;
+  line-height: 1.5
+}
+
+h1 {
+  font-size: 2em
+}
+
+h2 {
+  font-size: 1.5em
+}
+
+h3 {
+  font-size: 1.2em
+}
+
+ul, ol {
+  margin: 1em 0;
+  padding-left: 40px
+}
+
+p, figure {
+  margin: 1em 0
+}
+
+a img {
+  border: none
+}
+
+sup, sub {
+  line-height: 0
+}
+```
+
+## Creando nuestra plantilla para el miniblog
+
+Vamos a crear una plantilla base para ser reutilizada en las diferentes páginas del miniblog.
+
+Como has podido comprobar, las páginas que por el momento forman nuestro blog <code>index</code>, <code>post\_view</code>, <code>post\_form</code> comparten la misma estructura. Podemos evitar repetir el código si creamos una plantilla base que pueda ser reutilizada. Esto es muy útil por distintos motivos. Imagina que diseñas un menú para tu aplicación y el código de dicho menú lo replicas en cada una de las páginas de tu web. Ahora imagina que quieres o necesitas modificar el menú, por ejemplo, para añadir un nuevo apartado. ¿Qué ocurre? Que tienes que modificar cada una de las páginas de la web. Esto lo podemos solucionar utilizando una plantilla base.
+
+Para crear plantillas y bloques de código reutilizable, Jinja2 usa la etiqueta <code>{% block %}{% endblock %}</code>.
+
+A continuación vamos a crear la primera versión de nuestra plantilla base para el miniblog. Dentro del directorio <code>templates</code> crea un fichero llamado <code>base\_template.html</code> y pega el siguiente código:
+
+```
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for("static", filename="base.css") }}">
+  </head>
+  <body>
+    {% block content %}{% endblock %}
+  </body>
+</html>
+```
+
+Esta plantilla inicial es muy simple, pero nos servirá para ir trabajando sobre ella a lo largo del tutorial. En ella hay definidos dos bloques: <code>{% block title %}{% endblock %}</code> para el titulo y <code>{% block content %}{% endblock %}</code> como un contenedor para el contenido en sí de la página.
+
+Además, hemos enlazado el fichero con nuestros estilos <code>base.css</code> haciendo uso de la función <code>url\_for()</code>.
+
+Ahora nos resta modificar **las páginas del blog para que hagan uso** de esta plantilla:
+
+### index.html
+
+```
+{% extend "base_template.html" %}
+
+{% block title %}Tutorial Flask: Miniblog{% endblock %}
+
+{% block content %}
+  {{ num_posts }} posts
+{% endblock %}
+``` 
+
+### post_view.html
+
+```
+{% extends "base_template.html" %}
+
+{% block title %}{{ slug_title }}{% endblock %}
+
+{% block_content %}
+  Mostrando el post {{ slug_title }}
+{% endblock %}
+```
+
+### post_form.html
+
+```
+{% extends "base_template.html" %}
+
+{% block_title %}
+  {% if post_id %}
+    Modificando el post {{ post_id }}
+  {% else %}
+    Nuevo post
+  {% endif %}
+{% endblock %}
+
+{% block content %}
+  {% if post_id %}
+    Modificando el post {{ post_id }}
+  {% else %}
+    Nuevo post
+  {% endif %}
+{% endblock %}
+```
+
+## Conclusión
+
+Hasta aquí llega la segunda lección del tutorial sobre Flask. En ella hemos visto cómo asociar una URL a una vista, cómo crear la páginas para generar contenido dinámico, cómo añadir estilos y cómo hacer uso de plantillas para que sea más fácil diseñar las difer
