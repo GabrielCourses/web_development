@@ -131,7 +131,7 @@ def show_signup_form():
 ¿Qué destacaríamos del código anterior?
 
 - La primera línea de código de la vista <code>show\_signup\_form()</code> accede al atributo <code>method</code> del objeto <code>request</code>. Esta nos permite identificar si el cliente ha enviado los datos del formulario (<code>POST</code>) o, por el contrario, quiere mostrar el formulario del registro (<code>GET</code>).
-- Si se ha enviado el formulario, se recupera cada uno de los campos del mismo por medio del diccionario <code>form</code> del objeto <code>request</code>. Recuerda que el nombre de los campos es aquel que indicamos con el atributo <code>name</name> en la plantilla del formulario de registro.
+- Si se ha enviado el formulario, se recupera cada uno de los campos del mismo por medio del diccionario <code>form</code> del objeto <code>request</code>. Recuerda que el nombre de los campos es aquel que indicamos con el atributo <code>name</code> en la plantilla del formulario de registro.
 - Luego comprobaremos si se pasó por la URL el parámetro <code>next</code>. Este parámetro lo usaremos para redirigir al usuario a la página que se indica en el mismo. Si no se especifica, simplemente lo redirigimos a al página de inicio.
 - En caso de que no se haya enviado el formulario, se devuelve como respuesta la página que muestra el formulario de registro.  
 - Siempre que se procesa un formulario correctamente, **es una buena práctica hacer un redirect para evitar duplicados de datos** si el usuario recarga la página o hace clic en el botón _atrás_ del navegador.

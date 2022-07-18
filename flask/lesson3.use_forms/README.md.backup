@@ -270,4 +270,5 @@ def show_signup_form():
     return render_template("signup_form.html", form-form)
 ```
 
-En este caso lo primero que hacemos es instanciar un objeto de la clase <code>SingupForm()</code>. Al hacer esto puede ocurrir dos cosas en función de si la petición es <code>GET</code> o <code>POST</code>. Si el usuario simplemente ha accedido a la página que muestra el formulario de registro (GET), se crea un objeto con los campos vacíos. Por el contrario, si el usuario ha enviado el formulario (POST), se crea un objeto con los campos inicializados. El valor de estos campos es elq ue se envía en el cuerpo de la petición (recuerda que )
+En este caso lo primero que hacemos es instanciar un objeto de la clase <code>SingupForm()</code>. Al hacer esto puede ocurrir dos cosas en función de si la petición es <code>GET</code> o <code>POST</code>. Si el usuario simplemente ha accedido a la página que muestra el formulario de registro (GET), se crea un objeto con los campos vacíos. Por el contrario, si el usuario ha enviado el formulario (POST), se crea un objeto con los campos inicializados. El valor de estos campos es elq ue se envía en el cuerpo de la petición (recuerda que están en <code>request.form</code>).
+
