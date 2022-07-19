@@ -131,7 +131,7 @@ def show_signup_form():
 ¿Qué destacaríamos del código anterior?
 
 - La primera línea de código de la vista <code>show\_signup\_form()</code> accede al atributo <code>method</code> del objeto <code>request</code>. Esta nos permite identificar si el cliente ha enviado los datos del formulario (<code>POST</code>) o, por el contrario, quiere mostrar el formulario del registro (<code>GET</code>).
-- Si se ha enviado el formulario, se recupera cada uno de los campos del mismo por medio del diccionario <code>form</code> del objeto <code>request</code>. Recuerda que el nombre de los campos es aquel que indicamos con el atributo <code>name</name> en la plantilla del formulario de registro.
+- Si se ha enviado el formulario, se recupera cada uno de los campos del mismo por medio del diccionario <code>form</code> del objeto <code>request</code>. Recuerda que el nombre de los campos es aquel que indicamos con el atributo <code>name</code> en la plantilla del formulario de registro.
 - Luego comprobaremos si se pasó por la URL el parámetro <code>next</code>. Este parámetro lo usaremos para redirigir al usuario a la página que se indica en el mismo. Si no se especifica, simplemente lo redirigimos a al página de inicio.
 - En caso de que no se haya enviado el formulario, se devuelve como respuesta la página que muestra el formulario de registro.  
 - Siempre que se procesa un formulario correctamente, **es una buena práctica hacer un redirect para evitar duplicados de datos** si el usuario recarga la página o hace clic en el botón _atrás_ del navegador.
@@ -272,3 +272,20 @@ def show_signup_form():
 
 En este caso lo primero que hacemos es instanciar un objeto de la clase <code>SingupForm()</code>. Al hacer esto puede ocurrir dos cosas en función de si la petición es <code>GET</code> o <code>POST</code>. Si el usuario simplemente ha accedido a la página que muestra el formulario de registro (GET), se crea un objeto con los campos vacíos. Por el contrario, si el usuario ha enviado el formulario (POST), se crea un objeto con los campos inicializados. El valor de estos campos es elq ue se envía en el cuerpo de la petición (recuerda que están en <code>request.form</code>).
 
+Una vez instanciado el formulario, se llama al método <code>validate\_on\_submit()</code>. **Este método comprueba por nosotros que se ha enviado el formulario y que todos sus campos son válidos.** En este caso, podemos procesar nuestro formulario sin problema (la estructura del código es la misma que en el apartado anterior). Si no, devolveremos la plantilla que muestra el formulario (y en caso de que haya errores de validación se mostrarán al usuario).
+
+Se repetirán los pasos para el formulario que nos permitirá dar de alta nuevas enradas en el blog.
+
+### Formulario para dar de alta entradas en el blog
+
+Cómo en el ejemplo anterior, comenzaremos por implementar el formulario para dar de alta entradas en el blog
+
+#### PostForm
+
+```
+class PostForm(FlaskForm):
+    title = StringField('Título', validators=[DataRequired(), Length(max=128)])
+    title_slug = StringField('Título slug', validators=[Length(max=128)])
+    content = TextAreaField('Contenido')
+    submit = SubmitField('Enviar')
+```

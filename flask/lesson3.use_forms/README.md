@@ -272,3 +272,21 @@ def show_signup_form():
 
 En este caso lo primero que hacemos es instanciar un objeto de la clase <code>SingupForm()</code>. Al hacer esto puede ocurrir dos cosas en función de si la petición es <code>GET</code> o <code>POST</code>. Si el usuario simplemente ha accedido a la página que muestra el formulario de registro (GET), se crea un objeto con los campos vacíos. Por el contrario, si el usuario ha enviado el formulario (POST), se crea un objeto con los campos inicializados. El valor de estos campos es elq ue se envía en el cuerpo de la petición (recuerda que están en <code>request.form</code>).
 
+Una vez instanciado el formulario, se llama al método <code>validate\_on\_submit()</code>. **Este método comprueba por nosotros que se ha enviado el formulario y que todos sus campos son válidos.** En este caso, podemos procesar nuestro formulario sin problema (la estructura del código es la misma que en el apartado anterior). Si no, devolveremos la plantilla que muestra el formulario (y en caso de que haya errores de validación se mostrarán al usuario).
+
+Se repetirán los pasos para el formulario que nos permitirá dar de alta nuevas enradas en el blog.
+
+### Formulario para dar de alta entradas en el blog
+
+Cómo en el ejemplo anterior, comenzaremos por implementar el formulario para dar de alta entradas en el blog
+
+#### PostForm
+
+```
+class PostForm(FlaskForm):
+    title = StringField('Título', validators=[DataRequired(), Length(max=128)])
+    title_slug = StringField('Título slug', validators=[Length(max=128)])
+    content = TextAreaField('Contenido')
+    submit = SubmitField('Enviar')
+```
+
