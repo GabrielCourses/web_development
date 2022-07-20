@@ -290,3 +290,111 @@ class PostForm(FlaskForm):
     submit = SubmitField('Enviar')
 ```
 
+En este caso use el tipo de campo <code>TextAreaField</code> para tener un campo de texto apropiado con el que editar el contenido de la entrada.
+
+### La plantilla para el formulario PostForm
+
+A continuación modificaremos la plantilla <code>post\_form.html</code> que creamos en la lección 2 y que se encuentra en el directorio <code>templates/admin</code>.
+
+```
+{% extends "base_template.html" %}
+
+{% block_title %}
+  {% if form.title.data %}
+    {{ form.title.data }}
+  {% else %}
+    Nueva entrada
+  {% endif %}
+{% endblock %}
+
+{% block content%}
+  <form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+    <div>
+      {{ form.title.label }}
+      {{ form.title(size=128) }}<br>
+      {% for error in form.title.errors %}
+      <span style="color: red;">{{ error }}</span>
+      {% endfor %}
+    </div>
+    <div>
+      {{ form.title_slug.label }}
+      {{ form.title_slug(size=128) }}<br>
+      {% for error in form.title_slug.errors %}
+      <span style="color: red;">{{ error }}</span>
+      {% endfor %}
+    </div>
+    <div>
+      {{ form.content.label }}
+      {{ form.content }}<br>
+      {% for error in form.content,errors %}
+      <span style="color:red;">{{ error }}</span>
+      {% endfor %}
+      </div>
+      <div>
+	{{ form.submit() }}
+      </div>
+    </form>
+  {{ endblock}}
+```
+
+Puedes comprobar que es muy similar a la del formulario de registro.
+
+### La vista para procesar el formulario PostForm
+
+Por último, actualizamos la vista <code>post\_form()</code> para procesar el formulario. En caso de que no haya ningún error, aprovechamos para crear un post y guardarlo en la variable en memoria <code>posts</code>.
+
+```
+from forms import SignupForm, PostForm
+
+@app.route("/admin/post/", methods=['GET', 'POST'], defaults={'post_id': None})
+@app.route("/admin/post/<int:post_id>/", methods=['GET', 'POST'])
+def post_form(post_id):
+    form = PostForm()
+    if form.validate_on_submit():
+        title= form.title.data
+        title_slug = form.title_slug.data
+        content = form.content.data
+
+        post = {'title': title, 'title_slug': title_slug, 'content': content}
+        post.append(post)
+
+        return redirect(url_for('index'))
+    return render_template("admin/post_form.html", form=form)
+
+```
+
+Como ves, hemos seguido la misma filosofía que al procesar el formulario de registro.
+
+### ¿Quieres probar el código?
+
+A estas alturas del tutorial ya podemos empezar a jugar con el código de la aplicación. Para que veas que todo funciona haremos unas modificaciones de manera que veas los titulos del los post en la página de inicio.
+
+Actualiza la vista <code>index()</code> para pasarle a la plantilla la variable que contiene los post:
+
+```
+@app.route("/")
+def index():
+    return render_template("index.html", post=post)
+```
+
+Y modifica la plantilla <code>index.html</code> para que muestre los títulos de cada uno de los post que hay en memoria:
+
+```
+{% extend "base_template.html" %}
+
+{% block title %}Tutorial Flask: Miniblog{% endblock %}
+
+{% block content %}
+  <ul>
+    {% for post in posts %}
+      <li>{{ post.title }}</li>
+      {% endfor %}
+      </ul>
+{% endblock %}
+```
+
+### Conclusión
+
+**Ha sido una lección itensa pero muy productiva**. En ella hemos repasado conceptos de HTML, como crear un formulario y cómo procesarlo. Después, hemos dado una pequeña introducción al objeto request de Flask. Finalmente hemos insalado la extensión Flask-WTF para facilitarmos el manejo de formularios. Como resultado, ya podemos jugar con la aplicación gracias a los formularios de registro y edición de posts. 
+
